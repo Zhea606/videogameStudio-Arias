@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!-- redes sociales-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <header id="inicioPagina">
@@ -43,45 +47,46 @@
                 </ul>
             </nav>
     </header>
-    <main>
+    <main >
+</div>>
         <section id="gridPadreWwU">
             <div id="gridHijoUnoWwU">
                     <h3 class="claseH3">FIND YOUR PLACE IN THE WORLD</h3>
-                    <img id="imgIntro" src="../img/1366_2000.jpeg " alt="us" width="70%" height="50%" class="centrar">
+                    <img  data-aos="zoom-out-down" id="imgIntro" src="../img/1366_2000.jpeg " alt="us" width="70%" height="50%" class="centrar">
                         <h4 id="subTitleH4">Are you ready?</h4>
                             <h5 id="subTitleH5">OPEN POSITIONS:</h5>
                 <!-- falta el contador de la cantidad de posiciones-->
             </div>
-            <div id="gridHijoDosWwU">
+            <div id="gridHijoDosWwU" >
                 <img src="../img/emp3.jpg" alt="us" class = "card">
                 <!-- consultar si esto está bien armado-->
                 <!-- cual es la diferencia de ponerlo en article o en div? -->
-                    <li>PROGRAMMING</li>
+                    <li >PROGRAMMING</li>
                 <button id="button">APPLY HERE</button>
             </div>
             <div id="gridHijoTresWwU">
                 <img src="../img/emp1.jpg" alt="us" class="card">
                     <li>DESIGNER</li>
-                <button>APPLY HERE</button>    
+                <button id="button">APPLY HERE</button>    
             </div>
             <div id="gridHijoCuatroWwU">
                 <img src="../img/assets/emp3-1.png" alt="us" class="card">
                     <li>MARKETING</li>
-                <button>APPLY HERE</button>
+                <button id="button">APPLY HERE</button>
             </div>
             <div id="gridHijoCincoWwU">
-                <fieldset id="beneficts">
+                <fieldset id="beneficts" data-aos="zoom-out-up">
                     <legend>BENEFITS</legend>
                     <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente quisquam architecto delectus adipisci quasi optio, aperiam vero alias ducimus, debitis unde! Officia dignissimos laborum necessitatibus alias porro corporis doloremque.</p>
                 </fieldset>        
             </div>
             <div id="gridHijoSeisWwU">
-                <fieldset id="beneficts">
+                <fieldset id="beneficts" data-aos="zoom-out-up">
                     <legend>BENEFITS</legend>
                     <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente quisquam architecto delectus adipisci quasi optio, aperiam vero alias ducimus, debitis unde! Officia dignissimos laborum necessitatibus alias porro corporis doloremque.</p>
                 </fieldset> 
             </div>
-            <div id="gridHijoSieteWwU">
+            <div id="gridHijoSieteWwU" data-aos="zoom-out-up">
                 <fieldset id="beneficts">
                     <legend>BENEFITS</legend>
                     <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente quisquam architecto delectus adipisci quasi optio, aperiam vero alias ducimus, debitis unde! Officia dignissimos laborum necessitatibus alias porro corporis doloremque.</p>
@@ -91,7 +96,7 @@
                 <h5 id="subTitleH5">Can't find your career? No problem, leave your CV here or send it by email to rbgamestudio@jobs.com.ar</h5>
                 <label class="label" for="usuario" >Enter your name and rol</label> 
                 <input type="text" placeholder="'Maria Jubelian, programmer '" id = usuario>
-                <input type="button" value="Attach cv">
+                <input id="button" type="button" value="Attach cv">
             </section>
         </section>
     </main>
@@ -108,5 +113,9 @@
                             <h4>RandomBrains© 2022 All rights reserved.</h4>
                 <a href="#inicioPagina" class="haciaArriba" >Go to top</a>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

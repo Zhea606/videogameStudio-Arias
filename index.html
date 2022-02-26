@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!-- redes sociales-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header id="inicioPagina">
@@ -44,9 +47,9 @@
     </header>
     <main>
         <section id="gridPadre">
-            <div id="gridHijoUno">
-                <h1>RANDOM BRAINS</h1>
-                    <h2>STUDIOS</h2>
+            <div id="gridHijoUno" >
+                <h1 data-aos="fade-right">RANDOM BRAINS</h1>
+                    <h2 data-aos="fade-left">STUDIOS</h2>
             </div>
             <div id="gridHijoDos">
                         <h3 class="tituloH3">VIDEOS de PRESENTACIÓN</h3>
@@ -74,5 +77,9 @@
                 Go to top
             </a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
