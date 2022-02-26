@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/iconos/ms-icon-310x310.png">
+    <!-- estilo css-->
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- fuente de estilo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- redes sociales-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header id="inicioPagina">
+        <!--Lista del menú principal-->
+            <nav id="menu">
+                <div>
+                    <i>
+                        <!--Logo del estudio-->
+                        <a href="../index.html" >
+                            <img src="../img/assets/iconoEstudio.png" alt="logoEstudio" id="logo" >
+                        </a>
+                    </i>
+                </div>
+                <ul>
+                    <a href="aboutUs.html" class="subrayado" class= "color"> 
+                        <li>ABOUT US</li>   
+                    </a>
+                    <a href="ourGames.html" class="subrayado" class= "color"> 
+                        <li>OUR GAMES </li>
+                    </a>
+                    <a href="workWithUs.html" class="subrayado" class= "color"> 
+                        <li>WORK WITH US </li>
+                    </a>
+                    <li>CONTACT US</li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="gridPadreC">
+            <div id="gridHijoUnoC">
+                <h3 class="claseH3">Get in touch with us:</h3>
+            </div>
+            <div id="gridHijoDosC">
+                <fieldset id="fieldset">
+                    <legend id="legend">FORM </legend>
+                    <form id="form" action="" method="">
+                        <!-- Nombre--> 
+                        <label for="usuario">Name</label> 
+                        <input type="text" placeholder="Enter your name" id = usuario>
+                        <br> <!--los saltos de linea son momentáneos hasta encontrar una forma mejor-->
+                        <!-- Email  -->
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="example@example.com" id = email>
+                        <br>
+                        <!-- Número de teléfono del usuario  -->
+                        <label for="phone">Phone number</label>
+                        <input type="text" id="phone">
+                        <br>
+                        <!-- Mensaje, consulta o comentario del usuario-->
+                        <label for="message">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your questions or comments here" id= message></textarea>
+                        <input type="submit" value="SEND">  
+                    </form>
+                </fieldset>  
+            </div>
+        </section>
+    </main>    
+    <footer class="footer">
+        <!--iconos de redes sociales-->
+                            <h5>Join our comunity</h5>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-discord"></i></a>
+                            </div> 
+                        <h4>RandomBrains© 2022 All rights reserved.</h4>
+            <a href="#inicioPagina" class="haciaArriba" >Go to top</a>
+    </footer>
+</body>
+</html>
