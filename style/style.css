@@ -667,6 +667,17 @@
                 height:10%;
             }
 
+            #tituloObjetivo{
+                padding-bottom: 8px;
+                font-size: 20px;
+            }
+
+            .parrafo{
+                font-size: 15px;
+            }
+
+
+
 
             /* ABOUT US*/
             /*footer y header*/
@@ -694,8 +705,8 @@
             }
 
         .tamaño{
-            width:90vw;
-            height:40vh;
+            width:70vw;
+            height:30vh;
         }
 
         .claseH3{
@@ -740,7 +751,7 @@
             #gridPadreOG{
                 display: grid;
                 grid-template-columns:100%;
-                grid-template-rows:200px 400px 100px 400px 100px 400px 100px 400px 100px 400px;
+                grid-template-rows:200px 400px 200px 400px 200px 400px 200px 400px 200px 400px 50px;
                 /* background-color: rgb(234, 170, 236); */
                 grid-template-areas:"nameG1" 
                                     "game1"
@@ -758,12 +769,13 @@
                 }
 
 
+
             /* WORK WITH US*/
 
             #gridPadreWwU{
                 display: grid;
                 grid-template-columns:100%;
-                grid-template-rows:500px 200px 200px 200px 300px 300px 300px 100px;
+                grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px;
                 /* background-color: rgb(234, 170, 236); */
                 grid-template-areas:"place1"
                                     "jobs1" 
@@ -775,6 +787,24 @@
                                     "cv";        
                 }
         
+                #gridHijoDosWwU{
+                    width: 90%;
+                    height: 90%;
+                    font-size: 10px;
+                }
+
+                #gridHijoTresWwU{
+                    width: 90%;
+                    height: 90%;
+                    font-size: 10px;
+                }
+
+                #gridHijoCuatroWwU{
+                    width: 90%;
+                    height: 90%;
+                    font-size: 10px;
+                }
+
                 #subTitleH4{
                     font-size:15px;
                     }
@@ -786,12 +816,17 @@
 
 
             #beneficts{
-                width: 70vw;
-                height: 50vh;
-                margin:30px 80px 30px 80px;
+                width: 80vw;
+                height: 70vh;
+                margin:30px 50px 30px 80px;
                 padding: 0px 10px 0px 10px;
             }
 
+            #gridCV{
+                grid-area: cv;
+                width: 90%;
+                height: 200px;
+            }
 
             .label{
                 font-size: 10px;
@@ -800,6 +835,7 @@
                 padding-left: 30px;
             }
 
+            
 
 
             /* CONTACT US*/
