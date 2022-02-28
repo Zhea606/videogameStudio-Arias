@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RB STUDIOS</title>
     <!--favicon-->
     <link rel="shortcut icon" href="img/iconos/ms-icon-310x310.png">
     <!-- estilo css-->
@@ -17,43 +17,51 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="inicioPagina">
-            <!--Lista del menú principal-->
-            <nav  id="menu">
-                <div>
-                    <i>
-                        <!--Logo del estudio-->
-                        <img src="img/assets/iconoEstudio.png" alt="logoEstudio" id="logo" >
-                    </i>
-                </div>
-                <ul>
-                    <a href="html/aboutUs.html" class="subrayado" class= "color"> 
-                        <li>ABOUT US </li>
-                    </a>
-                    <a href="html/ourGames.html" class="subrayado" class= "color"> 
-                        <li>OUR GAMES </li>
-                    </a>
-                    <a href="html/workWithUs.html" class="subrayado" class= "color"> 
-                        <li>WORK WITH US </li>
-                    </a>
-                    <a href="html/contact.html" class="subrayado" class= "color"> 
-                        <li>CONTACT US</li>
-                    </a>
-                </ul>
-            </nav> 
+      <!-- navbar -->
+      <nav  class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!--Logo del estudio-->
+          <a class="navbar-brand">
+            <img src="img/assets/iconoEstudio.png" alt="logoEstudio" id="logo" >
+          </a>
+          <!-- no se que hace esto o_o?-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+              <!--Lista del menú principal-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li id="menu" class= "lista nav-item">
+                <a class= "color subrayado" href="html/aboutUs.html">ABOUT US</a>
+              </li>
+              <li id="menu" class= "lista nav-item">
+                <a class="color subrayado"  href="html/ourGames.html">OUR GAMES</a>
+              </li>
+              <li id="menu" class= "lista nav-item">
+                <a class="color subrayado"  href="html/workWithUs.html">WORK WITH US</a>
+              </li>
+              <li id="menu" class= "lista nav-item">
+                <a class="color subrayado"  href="html/contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
         <section id="gridPadre" class="container">
             <div id="gridHijoUno" >
-                <h1>RANDOM BRAINS</h1>
-                    <h2>STUDIOS</h2>
+                <h1 data-aos="fade-right">RANDOM BRAINS</h1>
+                    <h2 data-aos="fade-left">STUDIOS</h2>
             </div>
-            <div id="gridHijoDos"  >
+            <div id="gridHijoDos">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -62,11 +70,10 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <iframe  class="d-block w-100" src="https://www.youtube.com/embed/wuVT_bWf3VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="centrar"></iframe>
+                        <iframe  class="d-block w-100" src="https://www.youtube.com/embed/wuVT_bWf3VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       <div class="carousel-item">
                         <iframe class="d-block w-100"  src="https://www.youtube.com/embed/4mc51b4mFQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
                       </div>
                       <div class="carousel-item">
                         <iframe class="d-block w-100"  src="https://www.youtube.com/embed/_NhaVBZFkRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -80,10 +87,8 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
-                        <h3 class="tituloH3">VIDEOS de PRESENTACIÓN</h3>
-                <!-- acá se pondrán videos del estudio que van a ir pasando en bucle -->
-                <!-- <iframe width="60%" height="40%" src="https://www.youtube.com/embed/wuVT_bWf3VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="centrar"></iframe>     -->
+                </div>
+                        <h3 class="tituloH3">Look What We Did </h3>
             </div>
             <div id="gridHijoTres">
                         <h3 id="tituloObjetivo">Objective and vision</h3>
@@ -91,25 +96,49 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <!--iconos de redes sociales-->
-                            <h5>Join our comunity</h5>
-                            <div>
-                              <i class="bi bi-facebook"></i>
-                                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                              <i class="bi bi-youtube"></i> 
-                                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-                                <i class="bi bi-twitter"></i>
-                                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-                                <i class="bi bi-instagram"></i>
-                                <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
-                                <!-- <a href="#"><i class="fab fa-discord"></i></a> -->
-                                <i class="bi bi-discord"></i>  
-                            </div> 
-                        <h4>RandomBrains© 2022 All rights reserved.</h4>
-            <a href="#inicioPagina" class="haciaArriba" >
-              <i class="bi bi-caret-up"></i>
+    <footer class="footer bg-dark text-center text-white">
+              <h5>Join our comunity</h5>
+        <div class="container p-4 pb-0">
+          <!--Social media -->
+          <section>
+            <!-- Facebook -->
+            <a class=" btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i  class="social fab fa-facebook-f"></i>
             </a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="social fab fa-twitter"></i>
+            </a>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="social fab fa-google"></i>
+            </a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class=" social fab fa-instagram"></i>
+            </a>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="social fab fa-linkedin-in"></i>
+            </a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="social fab fa-github"></i>
+            </a>
+          </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <h4>RandomBrains© 2022 All rights reserved.</h4>
+        </div>
+        <a href="#inicioPagina" class="haciaArriba" >
+          <i class="bi bi-caret-up"></i>
+        </a>
+        <!-- script animaciones -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </footer>
 </body>
 </html>
