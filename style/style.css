@@ -1,13 +1,20 @@
     /*iconos css*/
-    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"); 
+    /* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");  */
 
-    
+    /* variables*/
+    /* :root{
+        --colorFont: rgb(80, 216, 240);
+        --colorTittle: color: blueviolet;
+        --fontFamily: 'Roboto', sans-serif;
+        --fontSizeParrafo: 5vw ;
+    } */
+
 
 /* Reseteo de CSS*/
-    *{
+    /* *{
         margin: 0;
         padding: 0;
-    }
+    } */
 
 
     /* falta imagen de fondo*/
@@ -24,120 +31,120 @@
 
 /*//INDEX//*/
 
-    #navbarNav{
+    /* #navbarNav{ */
         /* background-color: rgb(147, 230, 241); */
-        color: rgb(22, 20, 20);
+        /* color: rgb(22, 20, 20);
         transition: background-color .5s;
-    }
+    } */
 
     /* Menu de navegación de la página*/
-    #menu:hover{
+    /* #menu:hover{ */
         /* quiero cambiar tamaño del recuadro*/
-        background-color: rgb(147, 230, 241);
+        /* background-color: rgb(147, 230, 241);
         color: rgb(22, 20, 20);
         transition: background-color .5s;
-    }
+    } */
 
     /*quita subrayado de los enlaces*/
-    .subrayado{
+    /* .subrayado{
         text-decoration: none;
-    }
+    } */
 
-    .color{
+    /* .color{
         color: rgb(80, 216, 240);
         font-size: 20px;              
-    }
+    } */
     
-    header{
-        background-color: rgb(32, 29, 29);
-        display: flex;
-        height: 20vh;
-    }
+    /* header{
+        background-color: rgb(32, 29, 29); */
+        /* display: flex; */
+        /* height: 20vh;  */
+    /* } */
 
     /*logo del estudio/home*/
-    .container-fluid{
-        
-    }
-    #logo {    
+    /* #logo {    
         width:15%;
-        height:15%;
+        height:15%; */
         /*en mobile, se ve muy chico */
         /*incluir algo de css*/
-    }
+    /* } */
 
     /* Menu de navegación*/
 
-    .lista{
+    /* .lista{
         width: 200px;
         height: 60px;
-    }
+    } */
 
     /* nueva implementación de grilla main*/
-    #gridPadre{
+    /* #gridPadre{
         display: grid;
         grid-template-columns:50% 50%;
-        grid-template-rows:500px 300px;
+        grid-template-rows:500px 300px; */
         /* background-color: rgb(230, 117, 245); */
         
-        grid-template-areas: "n1 videos"
+        /* grid-template-areas: "n1 videos"
                             "objetivo objetivo";  
         justify-items: center;
         align-items:center;
-    }
+    } */
 
-    #gridHijoUno{
+    /* #gridHijoUno{ */
         /* background-color: rgb(99, 243, 190); */
-        grid-area: n1;
+        /* grid-area: n1;
         width: 100%;
         height: 80%;
-    }
+    } */
 
-    #gridHijoDos {
+    /* #gridHijoDos {
         background-color: rgb(77, 34, 235);
         grid-area: videos;
         width: 80%;
-        height: 80%;
+        height: 80%; */
         /* display: flex;
         flex-direction: column; */
-    }
-
+    /* } */
+/* 
     #gridHijoTres{
         background-color: rgb(217, 91, 248);
         grid-area: objetivo;
         width: 80%;
-        height: 80%;
+        height: 80%; */
         /*falta más estilo y mas contenido*/
-    }
+    /* } */
 
 
     /* Nombre del estudio*/
-    main h1{
-        color: rgb(31, 193, 214);
-        font-style:normal;
+    /* main h1{
+        color: rgb(31, 193, 214); */
+        /* color: var( --colorFont); */
+        /* font-style:normal;
         font-family:'Roboto', sans-serif;
-        font-size: 5vw ;
-        padding-top: 200px;
-        }
+        /* font-family: var(--fontFamily); */
+        /* font-size: 5vw ; */
+        /* font-size: var(--fontSize);*/
+        /* padding-top: 200px;
+        } */ 
 
-    main h2{
+    /* main h2{
         color: rgb(57, 199, 152);
         font-style:normal;
         font-family:'Roboto', sans-serif;
         font-size: 3vw;
         text-align: right;
-    }
+    } */
 
     /* Videos*/
-    iframe{
+    /* iframe{ */
         /* width: 100%;
         height: 100%; */
-    }
+    /* } */
 
     
     /*Objective and vision*/
     /*falta dar más formato*/
 
-    #tituloObjetivo{
+    /* #tituloObjetivo{
         text-align: left;
         padding-bottom: 50px;
         color: blueviolet;
@@ -159,11 +166,11 @@
     .footer{
         background-color:rgb(15, 15, 15);
         height: 30vh;
-    }
+    } */
 
-    footer h5{
+    /* footer h5{ */
         /*go to top debe ir del lado derecho*/
-        color: rgb(205, 144, 252);
+        /* color: rgb(205, 144, 252);
         font-size:2vw;
         text-align: center;
         padding-top: 20px;
@@ -178,50 +185,50 @@
             color: rgb(131, 126, 126);
             text-align: center; 
             font-size: 10px;
-    }
+    } */
 
-    .haciaArriba{
+    /* .haciaArriba{
         color: aqua;
-        margin-left: 85vw;
+        margin-left: 85vw; */
 
         /*con que es mejor  alinear Go to top a la derecha? poner un icono en vez de titulo*/
-    }
+    /* } */
 
 
 
 /*//ABOUT US//*/
 
-        .logoHome:hover{
+        /* .logoHome:hover{
             transform: scale(1.2,1.2);
             transition: all .5s;
-        }
+        } */
 
         /* nueva implementación de grilla*/
-        #gridPadreAB{
+        /* #gridPadreAB{
             display: grid;
             grid-template-columns: 33% 33% 34% ;
-            grid-template-rows:500px 300px 400px 300px 400px;
+            grid-template-rows:500px 300px 400px 300px 400px; */
             /* background-color: rgb(234, 170, 236); */
-            grid-template-areas:"about1  about1 about1"
+            /* grid-template-areas:"about1  about1 about1"
                                 "we we we"
                                 "believe1 believe2 believe3"
                                 "weB weB weB"
                                 "born1 born2 born3";
             height: 100%;
             width: 100%;
-            
+             */
             /* justify-items: center;
             align-items:center;  en que influye esto?   */
-        }
+        /* }
     
-        #gridHijoUnoAB {
+        #gridHijoUnoAB { */
             /* background-color: aquamarine; */
-            grid-area: about1;
+            /* grid-area: about1;
             width: 100%;
             height: 100%;
-        }
+        } */
     
-        #gridHijoDosAB {
+        /* #gridHijoDosAB {
             background-color: rgb(125, 90, 248);
             grid-area: we; 
             width: 100%;
@@ -310,7 +317,7 @@
             align-self: center;
             transition: all 1s;;
             filter: grayscale(1);
-        }
+        } */
 
         /* encontrar una mejor manera de poner diseño en las imagenes, no se hizo un sólo id, por que están ubicadas en diferentes areas*/
 
@@ -442,9 +449,7 @@
         
         transition: all 1s;
         object-fit: cover; /*mantiene resolución*/
-
     }
-
 
     #nombreJuego {
         color: rgb(42, 54, 224);
@@ -459,7 +464,6 @@
         padding: 60px 100px 0px 100px;
         text-align: center;
     }
-
 
 
 
@@ -536,12 +540,10 @@
         width: 100%;
         height: 100%;
         /* background-color: antiquewhite; */
-        /* alinear estooo*/
     }
 
 
     #subTitleH4{
-        /* necesito alinear el titulo sobre los iconos*/
         color: rgb(46, 43, 243);
         font-size:25px;
         text-align: center;
@@ -622,11 +624,11 @@
 
     /*MOBILE*/
 
-        @media only screen and (max-width:600px){
+        /* @media only screen and (max-width:600px){ */
 
             /*INDEX*/
                 /* header y footer arreglar,h4*/
-            #gridPadre {
+            /* #gridPadre {
                 grid-template-columns:100%;
                 grid-template-rows:500px 500px 400px;
                 grid-template-areas: "n1"
@@ -634,11 +636,11 @@
                                     "objetivo";                      
                 justify-items: center;
                 align-items:center;
-            }
+            } */
 
             /*Nombre estudio*/
 
-            main h1{
+            /* main h1{
                 font-size: 10vw ;
             }
             
@@ -647,9 +649,8 @@
             }
 
             #logo {
-                /* alinear a la izquierda, no ha funcionado ninguno*/
-                width:8%;
-                height:10%;
+                width:15%;
+                height:15%;
             }
 
             #tituloObjetivo{
@@ -659,13 +660,12 @@
 
             .parrafo{
                 font-size: 15px;
-            }
+            } */
 
 
 
 
             /* ABOUT US*/
-            /*footer y header*/
             div h3{
                 padding: 30px 0px 20px 40px;
             }
@@ -708,25 +708,6 @@
         #imgIntro{
             width: 90vw;
             
-        }
-
-
-        #job1{
-            grid-area: believe1;
-            justify-self: center;
-            align-self: center; 
-        }
-
-        #job2{
-            grid-area: believe2;
-            justify-self: center;
-            align-self: center; 
-        }
-
-        #job3{
-            grid-area: believe3;
-            justify-self: center;
-            align-self: center;
         }
 
 
@@ -825,8 +806,6 @@
                 padding-left: 30px;
             }
 
-            
-
 
             /* CONTACT US*/
 
@@ -852,6 +831,148 @@
         }
 
 
+    /*TABLETS */
+
+        @media (max-width:900px) and (min-width:600px){
+
+            /*ABOUT US*/
+            #gridPadreAB{
+                grid-template-columns: 50% 50%;
+                grid-template-rows:400px 300px 300px 300px 300px 300px 300px;
+                grid-template-areas:"about1 about1"
+                                    "we we"
+                                    "believe1 believe2"
+                                    "believe3 believe3"
+                                    "webB webB"
+                                    "born1 born2"
+                                    "born3 born3";
+                }
+    
+                #gridHijoUnoAB {
+                    /* background-color: aquamarine; */
+                    grid-area: about1;
+                    justify-self: center;
+                    align-self: center;  
+                }
+            
+                #gridHijoDosAB {
+                    background-color: rgb(125, 90, 248);
+                    grid-area: we; 
+                    width: 100%;
+                    height: 100%;
+                }
+            
+                #gridHijoTresAB{
+                    grid-area: webB; 
+                    background-color: rgb(241, 215, 64);
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                
+            .tamaño{
+                width:40vw;
+                height:30vh;
+            }
+    
+            .claseH3{
+                text-align: center;
+                padding: 50px 0px 20px 40px;
+                font-size: 30px;
+            }        
+    
+            #nombreJuego {
+                font-size: 20px;
+                text-align: left;
+            }
+    
+            #imgIntro{
+                width: 70vw;               
+            }
+        
+
+            /* WORK WITH US*/
+
+            #gridPadreWwU{
+                display: grid;
+                grid-template-columns:50% 50%;
+                grid-template-rows:500px 300px 300px 300px 300px 200px;
+                /* background-color: rgb(234, 170, 236); */
+                grid-template-areas:"place1 place1"
+                                    "jobs1 jobs2" 
+                                    "jobs3 jobs3"
+                                    "ben1 ben2" 
+                                    "ben3 ben3"
+                                    "cv cv";        
+                }
+
+                #gridHijoDosWwU{
+                    width: 90%;
+                    height: 80%;
+                    font-size: 10px;
+                }
+
+                #gridHijoTresWwU{
+                    width: 90%;
+                    height: 80%;
+                    font-size: 10px;
+                }
+
+                #gridHijoCuatroWwU{
+                    width: 50%;
+                    height: 80%;
+                    font-size: 10px;
+                }
+
+                #gridHijoCincoWwU{
+                    width: 95%;
+                    height: 90%;
+                    font-size: 15px;
+                }
+
+                #gridHijoSeisWwU{
+                    width: 95%;
+                    height: 90%;
+                    font-size: 15px;
+                }
+
+                #gridHijoSieteWwU{
+                    width: 50%;
+                    height: 90%;
+                    font-size: 15px;
+                }
+
+                #subTitleH4{
+                    font-size:15px;
+                    }
+            
+            
+                #subTitleH5{
+                    font-size:15px;
+                    }
+
+            
+            #beneficts{
+                width: 100%;
+                height: 100%;
+                margin:30px 20px 0px 30px;
+                padding: 0px 10px 0px 10px;
+            }
+
+            #gridCV{
+                grid-area: cv;
+                width: 90%;
+                height: 200px;
+            }
+
+            .label{
+                font-size: 15px;
+                color: rgb(134, 17, 243);
+                justify-self:center;
+                padding-left: 30px;
+            }
+            
+        }
 
 
     /*DESKTOP*/
@@ -887,55 +1008,6 @@
                 height: 70%;
             }
     }
-
-
-
-
-
-    /**** ANIMACIONES ****/
-
-    /*ABOUT US*/
-        #job1:hover{
-            transform: scale(1.2,1.2);
-            filter: grayscale(0);
-        }
-
-        #job2:hover{
-            transform: scale(1.2,1.2);
-            filter: grayscale(0);
-        }
-
-        #job3:hover{
-            transform: scale(1.2,1.2);
-            filter: grayscale(0);
-        }
-
-        #b1:hover{
-            transform: scale(1.2,1.2);
-            filter: grayscale(0);
-        }
-
-        #b2:hover{
-            transform: scale(1.2,1.2);
-            filter: grayscale(0);
-        }
-
-        #b3:hover{
-            transform: scale(1.2,1.2);
-            filter: grayscale(0);
-        }
-
-
-    /*OUR GAMES*/
-        #imgJuego:hover{
-            transform: scale(1.2,1.2);
-        }
-
-
-    /*WORK WITH US*/    
-        #button:hover{
-            filter:grayscale(1);
-        }
 
 
         

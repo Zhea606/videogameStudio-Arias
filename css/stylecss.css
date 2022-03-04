@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*iconos css*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/*imports de scss*/
+/* Reseteo de CSS*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/* variables globales*/
+/* $colorLetras: red*/
+:root {
+  --colorFont: rgb(80, 216, 240);
+  --fontFamily: 'Roboto', sans-serif;
+  --fontSizeParrafo: 1.5vw ;
+  --widthCard: 80%;
+  --heightCard: 80%; }
+
+header {
+  /* display: flex; */
+  /* height: 20vh;  */ }
+
+/*quita subrayado de los enlaces*/
+.subrayado {
+  text-decoration: none; }
+
+.color {
+  color: #50d8f0;
+  /*color :$colorLetras*/
+  font-size: 20px; }
+
+/* Menu de navegación*/
+.lista {
+  width: 200px;
+  height: 60px; }
+
+/* falta imagen de fondo*/
+/* body{
+
+        background-image: url(/img/assets/fondoPagina.jpg);
+        background-size: 100vw 100vh; 
+        background-attachment: fixed; */
+/* background-image: linear-gradient(to bottom, rgb(27, 5, 5), rgb(73, 196, 233));
+        /* }  */
+.parrafo {
+  line-height: 1.5;
+  padding: 0px 50px 0px 30px;
+  font-size: var(--fontSizeParrafo); }
+
+.footer {
+  background-color: #0f0f0f;
+  height: 30vh; }
+
+.haciaArriba {
+  color: var(--colorFont);
+  margin-left: 85vw; }
+
+/*//INDEX//*/
+#navbarNav {
+  /* background-color: rgb(147, 230, 241); */ }
+
+/* Menu de navegación de la página*/
+#menu:hover {
+  /* quiero cambiar tamaño del recuadro*/
+  background-color: #93e6f1;
+  transition: background-color .5s; }
+
+/*logo del estudio/home*/
+#logo {
+  width: 20%;
+  height: 20%;
+  /*en mobile, se ve muy chico */ }
+
+/* nueva implementación de grilla main*/
+#gridPadre {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px 300px;
+  /* background-color: rgb(230, 117, 245); */
+  grid-template-areas: "n1 videos" "objetivo objetivo";
+  justify-items: center;
+  align-items: center; }
+
+#gridHijoUno {
+  /* background-color: rgb(99, 243, 190); */
+  grid-area: n1;
+  width: 100%;
+  height: 80%; }
+
+#gridHijoDos {
+  background-color: #4d22eb;
+  grid-area: videos;
+  width: var(--widthCard);
+  height: var(--heightCard); }
+
+#gridHijoTres {
+  grid-area: objetivo;
+  width: var(--widthCard);
+  height: var(--heightCard);
+  /*falta más estilo y mas contenido*/ }
+
+/* Nombre del estudio*/
+main h1 {
+  color: var(--colorFont);
+  font-style: normal;
+  font-family: var(--fontFamily);
+  font-size: 5vw;
+  padding-top: 200px; }
+
+main h2 {
+  color: #39c798;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  text-align: right; }
+
+main h3 {
+  text-align: center;
+  color: #ef4ff5;
+  /*si llamo a la variable no se aplica*/
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+/* Videos*/
+iframe {
+  /* width: 100%;
+        height: 100%; */ }
+
+footer h4 {
+  color: #837e7e;
+  text-align: center;
+  font-size: 10px; }
+
+footer h5 {
+  color: #ef4ff5;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+/**** Media Queries ****/
+/*MOBILE*/
+@media only screen and (max-width: 600px) {
+  /*INDEX*/
+  #gridPadre {
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 500px 400px;
+    grid-template-areas: "n1" "videos" "objetivo";
+    justify-items: center;
+    align-items: center; }
+  /*Nombre estudio*/
+  main h1 {
+    font-size: 10vw; }
+  main h2 {
+    font-size: 5vw; }
+  main h3 {
+    text-align: center;
+    color: #ef4ff5;
+    /*si llamo a la variable no se aplica*/
+    font-size: 15px; }
+  #logo {
+    width: 15%;
+    height: 15%; }
+  .parrafo {
+    font-size: 10px; }
+  .color {
+    color: #50d8f0;
+    font-size: 10px; } }
