@@ -1,28 +1,22 @@
 /*//ABOUT US//*/
 
-        .logoHome:hover{
-            transform: scale(1.2,1.2);
-            transition: all .5s;
-        }
-
-        /* nueva implementación de grilla*/
-        #gridPadreAB{
-            display: grid;
-            grid-template-columns: 33% 33% 34% ;
-            grid-template-rows:500px 300px 400px 300px 400px;
-            /* background-color: rgb(234, 170, 236); */
-            grid-template-areas:"about1  about1 about1"
-                                "we we we"
-                                "believe1 believe2 believe3"
-                                "weB weB weB"
-                                "born1 born2 born3";
-            height: 100%;
-            width: 100%;
-            
-            /* justify-items: center;
-            align-items:center;  en que influye esto?   */
-        }
+/* nueva implementación de grilla*/
+    #gridPadreAB{
+        display: grid;
+        grid-template-columns: 33% 33% 34% ;
+        grid-template-rows:500px 300px 400px 300px 400px;
+        grid-template-areas:"about1  about1 about1"
+                            "we we we"
+                            "believe1 believe2 believe3"
+                            "weB weB weB"
+                            "born1 born2 born3";
+        height: 100%;
+        width: 100%;
+    }
     
+
+
+    ///arreglar esto al margen
         #gridHijoUnoAB {
             /* background-color: aquamarine; */
             grid-area: about1;
@@ -31,7 +25,7 @@
         }
     
         #gridHijoDosAB {
-            background-color: rgb(125, 90, 248);
+            background-color: rgba(124, 90, 248, 0.746);
             grid-area: we; 
             width: 100%;
             height: 100%;
@@ -39,87 +33,226 @@
     
         #gridHijoTresAB{
             grid-area: weB; 
-            background-color: rgb(241, 215, 64);
+            background-color: rgba(96, 243, 108, 0.746);
             width: 100%;
             height: 100%;
         }
     
-        .parrafoAB{
-            line-height: 1.5;
-            padding: 0px 100px 0px 100px;
+        .parrafoAB{ 
+            @extend .parrafo;
         }
 
-        .subTittle{
-            color: rgb(196, 91, 241);
-            font-style:normal;
-            font-family:'Roboto', sans-serif;
-            font-size: 100px;
-            text-align: left;
-            padding: 0px 0px 40px 40px;
-        }         
+        #about{
+            @extend .subTittle;
+        }
 
         .centrar{
             margin:auto;
             display:block;
         }
     
-        .tamaño{
-            width:30vw;
-            height:40vh;
-        }
     
         #imgIntro{
             justify-self:center;
             align-self:center;
         }
 
+
         #job1{
+            @extend .img;
             grid-area: believe1;
-            justify-self: center;
-            align-self: center; 
-            transition: all 1s;;
-            filter: grayscale(1);
         }
 
         #job2{
+            @extend .img;
             grid-area: believe2;
-            justify-self: center;
-            align-self: center;
-            transition: all 1s;;
-            filter: grayscale(1);
         }
 
         #job3{
+            @extend .img;
             grid-area: believe3;
-            justify-self: center;
-            align-self: center;
-            transition: all 1s;;
-            filter: grayscale(1);
         }
 
         #b1{
+            @extend .img;
             grid-area: born1;
-            justify-self: center;
-            align-self: center; 
-            transition: all 1s;;
-            filter: grayscale(1);
         }
 
         #b2{
+            @extend .img;
             grid-area: born2;
-            justify-self: center;
-            align-self: center;
-            transition: all 1s;;
-            filter: grayscale(1);
         }
 
         #b3{
+            @extend .img;
             grid-area: born3;
-            justify-self: center;
-            align-self: center;
-            transition: all 1s;;
-            filter: grayscale(1);
         }
 
-        /* encontrar una mejor manera de poner diseño en las imagenes, no se hizo un sólo id, por que están ubicadas en diferentes areas*/
 
+
+
+        /*MOBILE*/
+
+        @media only screen and (max-width:600px){ 
+            /* ABOUT US*/
+            main div h3{
+                padding: 30px 0px 20px 40px;
+            }
+
+            .parrafoAB{
+                line-height: 1.5;
+                padding: 0px 30px 2px 50px;
+            }   /*hay una mejor forma de hacerlo?*/
+
+        #gridPadreAB{
+            grid-template-columns: 100% ;
+            grid-template-rows:400px 300px 300px 300px 300px 300px 300px 300px 300px;
+            grid-template-areas:"about1 "
+                                "we"
+                                "believe1"
+                                "believe2"
+                                "believe3"
+                                "weB"
+                                "born1"
+                                "born2"
+                                "born3";
+            }
+
+        // .tamaño{
+        //     width:70vw;
+        //     height:30vh;
+        // }
+
+
+
+        ///media queries arreglar
+
+        // .claseH3{
+        //     text-align: center;
+        //     padding: 50px 0px 20px 40px;
+        //     font-size: 30px;
+        // }        
+
+        #imgIntro{
+            width: 90vw;
+            
+        }
+
+    }
+
+         /*TABLETS */
+
+         @media (max-width:900px) and (min-width:600px){
+
+            /*ABOUT US*/
+            #gridPadreAB{
+                grid-template-columns: 50% 50%;
+                grid-template-rows:400px 300px 300px 300px 300px 300px 300px;
+                grid-template-areas:"about1 about1"
+                                    "we we"
+                                    "believe1 believe2"
+                                    "believe3 believe3"
+                                    "webB webB"
+                                    "born1 born2"
+                                    "born3 born3";
+                }
+    
+                #gridHijoUnoAB {
+                    /* background-color: aquamarine; */
+                    grid-area: about1;
+                    justify-self: center;
+                    align-self: center;  
+                }
+            
+                #gridHijoDosAB {
+                    background-color: rgb(125, 90, 248);
+                    grid-area: we; 
+                    width: 100%;
+                    height: 100%;
+                }
+            
+                #gridHijoTresAB{
+                    grid-area: webB; 
+                    background-color: rgb(241, 215, 64);
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                
+            .tamaño{
+                width:40vw;
+                height:30vh;
+            }
+    
+            .claseH3{
+                text-align: center;
+                padding: 50px 0px 20px 40px;
+                font-size: 30px;
+            }        
+    
+            #nombreJuego {
+                font-size: 20px;
+                text-align: left;
+            }
+    
+            #imgIntro{
+                width: 70vw;               
+            }
+        }   
+
+            /*DESKTOP*/
+
+        @media only screen and (min-width:962px){
+
+            /* ABOUT US*/
+            
+            #gridPadreAB{
+                grid-template-rows:700px 500px 400px 500px 400px;
+            }
+
+            .claseH3{
+                padding: 100px 0px 40px 40px;
+            }         
+
+            .parrafoAB{
+                line-height: 1.5;
+                font-size: 30px;
+                padding: 0px 100px 0px 100px;
+            }
+        }
+
+
+          /**** ANIMACIONES ****/
+
+    /*animaciones con aos*/
+    
+    /*ABOUT US*/
+    #job1:hover{
+        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+    }
+
+    #job2:hover{
+        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+    }
+
+    #job3:hover{
+        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+    }
+
+    #b1:hover{
+        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+    }
+
+    #b2:hover{
+        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+    }
+
+    #b3:hover{
+        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+    }

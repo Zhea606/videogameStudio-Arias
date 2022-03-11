@@ -1,11 +1,11 @@
 /*//INDEX//*/
+@import "variables.scss";
 
 /* nueva implementación de grilla main*/
 #gridPadre{
     display: grid;
     grid-template-columns:50% 50%;
-    grid-template-rows:500px 300px;
-    /* background-color: rgb(230, 117, 245); */   
+    grid-template-rows:500px 300px; 
     grid-template-areas: "n1 videos"
                         "objetivo objetivo";  
     justify-items:center;
@@ -24,8 +24,6 @@
     grid-area: videos;
     width: $widthCard;
     height: $heightCard;
-    //  display: flex;
-    // flex-direction: column; 
 }
 
 #gridHijoTres{
@@ -50,26 +48,21 @@ main {
     h2{
         color: rgb(57, 199, 152);
         font-style:normal;
-        font-family:'Roboto', sans-serif;
+        font-family:$fontFamily;
         font-size: 3vw;
         text-align: right;
         } 
     //objetivo y vision
     h3{
-        text-align: center;
-        color: $colorTittle;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        @extend .tittleH3;
     }
 }  
 
-/* Videos*/
-iframe{
-    /* width: 100%;
-    height: 100%; */
+.parrafoIn{
+    @extend .parrafo;
 }
 
-
+//mover a otro scss
   /**** Media Queries ****/
 
 /*MOBILE*/
@@ -108,12 +101,9 @@ iframe{
         height:15%;
     }
 
-    .parrafo{
+    .parrafoIn{
         font-size: 10px;
     }
 
-    // .color{
-    //     color: rgb(80, 216, 240);
-    //     font-size: 10px;              
-    // } 
+
 } 

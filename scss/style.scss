@@ -1,23 +1,22 @@
+
 /*iconos css*/
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"); 
-
 
 /*imports de scss*/
     @import "index";
     @import "header&footer";
     @import "variables";
 
-    // @import "_aboutUs";
-    /*@import "_ourGames"*/
-    /*@import "_workWithus"*/
-    /*@import "_contact"*/
+    @import "aboutUs";
+    @import "ourGames";
+    @import "workWithus";
+    @import "contact";
 
 /* Reseteo de CSS*/
   * {
         margin: 0;
         padding: 0;
     }
-
 
 /* falta imagen de fondo*/
         
@@ -41,23 +40,6 @@
     font-size: 20px;              
 } 
 
-/* Menu de navegación*/
-.lista{
-    width: 200px;
-    height: 60px;
-}
-    
-.parrafo{
-    line-height: 1.5;
-    padding: 0px 50px 0px 30px;
-    font-size: $fontSizeParrafo;
-}
-    
-.footer{
-    background-color:rgb(15, 15, 15);
-    height: 30vh;
-}
 
-.haciaArriba{
-    margin-left: 85vw;
-}
+
+

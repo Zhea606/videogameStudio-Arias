@@ -326,21 +326,21 @@
 /*// OUR GAMES//*/
 
     /* nueva implementación de grilla*/
-    #gridPadreOG{
+    /* #gridPadreOG{
         display: grid;
         grid-template-columns:50% 50%;
-        grid-template-rows:200px 500px 500px 500px 500px 500px 200px;
+        grid-template-rows:200px 500px 500px 500px 500px 500px 200px; */
         /* background-color: rgb(234, 170, 236); */
-        grid-template-areas:"title title"
+        /* grid-template-areas:"title title"
                             "nameG1 game1"
                             "game2 nameG2"
                             "nameG3 game3"
                             "game4 nameG4"
-                            "nameG5 game5"
-                            "playStore playStore"; /* existe forma de no poner tantos hijos?*/
-        justify-items: center; /*cartas */
-        align-items:center; /*cartas */
-        }
+                            "nameG5 game5" */
+                            /* "playStore playStore"; existe forma de no poner tantos hijos? */
+        /* justify-items: center; cartas */
+        /* align-items:center; cartas */
+        /* }
 
         #title{
             grid-area: title;
@@ -348,25 +348,25 @@
             margin-left: 5vw;
         }
 
-    #gridHijoUnoOG {
+    #gridHijoUnoOG { */
         /* background-color: rgb(47, 247, 180); */
-        grid-area: nameG1;
+        /* grid-area: nameG1;
         width: 100%;
-        height: 100%;
+        height: 100%; */
         /* falta centrar*/
-    }
+    /* } */
 
 
-    #gridHijoDosOG {
+    /* #gridHijoDosOG {
         background-color: rgb(33, 31, 34);
         grid-area: game1;
         width: 80%;
         height: 80%;
-        justify-self: center;
-        align-self: center; /* no se centra dentro del hijo?*/
-    }
+        justify-self: center; */
+        /* align-self: center; no se centra dentro del hijo? */
+    /* } */
 
-    #gridHijoTresOG {
+    /* #gridHijoTresOG {
         background-color: rgb(83, 48, 211);
         grid-area: game2;
         width: 80%;
@@ -374,52 +374,52 @@
     }
 
     #gridHijoCuatroOG{
-        grid-area: nameG2;
+        grid-area: nameG2; */
         /* background-color: rgb(49, 145, 209); */
-        width: 100%;
+        /* width: 100%;
         height: 100%;
     }
 
 
     #gridHijoCincoOG{
-        grid-area: nameG3;
+        grid-area: nameG3; */
         /* background-color: rgb(241, 226, 87); */
-        width: 100%;
+        /* width: 100%;
         height: 100%;
     }
 
     #gridHijoSeisOG{
-        grid-area: game3;
+        grid-area: game3; */
         /* background-color: rgb(198, 87, 226); */
-        width: 80%;
+        /* width: 80%;
         height: 80%;
     }
 
     #gridHijoSieteOG{
-        grid-area: game4;
+        grid-area: game4; */
         /* background-color: rgb(236, 71, 85); */
-        width: 80%;
+        /* width: 80%;
         height: 80%;
     }
 
     #gridHijoOchoOG{
-        grid-area: nameG4;
+        grid-area: nameG4; */
         /* background-color: rgb(46, 80, 235); */
-        width: 100%;
+        /* width: 100%;
         height: 100%;
     }
 
     #gridHijoNueveOG{
-        grid-area: nameG5;
+        grid-area: nameG5; */
         /* background-color: rgb(81, 88, 80); */
-        width: 100%;
+        /* width: 100%;
         height: 100%;
     }
 
     #gridHijoDiezOG{
-        grid-area: game5;
+        grid-area: game5; */
         /* background-color: rgb(82, 241, 77); */
-        width: 80%;
+        /* width: 80%;
         height: 80%;
     }
 
@@ -429,19 +429,19 @@
         font-size: 20px;
         color: rgb(134, 17, 243);
         justify-self:center;
-        padding-left: 30px;
+        padding-left: 30px; */
         /* buscar decoración*/
-    }
+    /* /* } */
 
-    .card {
+    /* .card {
         height: 80%;
         width: 80%;
         align-items: center;
         justify-items: center;
-        margin-top: 4vw;
+        margin-top: 4vw; */ 
        /* margin-left: 2vw; */
-    }
-
+    /* } */
+/* 
     #imgJuego{
         width: 100%;
         height: 100%;
@@ -449,21 +449,20 @@
         
         transition: all 1s;
         object-fit: cover; /*mantiene resolución*/
-    }
+    /* } */
 
-    #nombreJuego {
+    /* #nombreJuego {
         color: rgb(42, 54, 224);
         text-align: center;
         font-size: 30px;
         padding-top: 30px;
-        /* si le ponia h4, se escondia detras de la carta 2*/
     }
 
     .parrafoOG{
         line-height: 1.5;
         padding: 60px 100px 0px 100px;
         text-align: center;
-    }
+    } */ 
 
 
 
@@ -471,23 +470,23 @@
 
 
     /* nueva implementación de grilla*/
-    #gridPadreWwU{
+    /* #gridPadreWwU{
         display: grid;
         grid-template-columns:33% 33% 34%;
-        grid-template-rows:700px 350px 600px 100px;
+        grid-template-rows:700px 350px 600px 100px; */
         /* background-color: rgb(234, 170, 236); */
-        grid-template-areas:"place1 place1 place1"
+        /* grid-template-areas:"place1 place1 place1"
                             "jobs1 jobs2 jobs3"
                             "ben1 ben2 ben3"
-                            "cv cv cv";
-        justify-items: center; /*cartas */
-        align-items:center; /*cartas */
-        }
+                            "cv cv cv"; */
+        /* justify-items: center; cartas */
+        /* align-items:center; cartas */
+        /* } */
 
-
-    #gridHijoUnoWwU {
+/* 
+    #gridHijoUnoWwU { */
         /* background-color: rgb(47, 247, 180); */
-        grid-area: place1;
+        /* grid-area: place1;
         width: 100%;
         height: 100%;
     }
@@ -538,9 +537,9 @@
     #gridCV{
         grid-area: cv;
         width: 100%;
-        height: 100%;
+        height: 100%; */
         /* background-color: antiquewhite; */
-    }
+    /* }
 
 
     #subTitleH4{
@@ -575,38 +574,38 @@
             color: aliceblue;
             height: 30px;
             width: 100px;            
-            background-image: linear-gradient(to top, #4A00E0, #8E2DE2);
+            background-image: linear-gradient(to top, #4A00E0, #8E2DE2); */
             /* alinear los que están dentro de los jobs*/
-        }
+        /* } */
     /* falta estilo a los labels e inputs*/
 
 
 /*// CONTAC//*/
 
     /* nueva implementación de grilla*/
-    #gridPadreC{
+    /* #gridPadreC{
         display: grid;
         grid-template-columns:50% 50%;
-        grid-template-rows:200px 500px;
+        grid-template-rows:200px 500px; */
          /* background-color: rgb(255, 255, 255); */
-        grid-template-areas:"title title"
-                            "form form";
-        justify-items: center; /*cartas */
-        align-items:center; /* cartas */
-        }
+        /* grid-template-areas:"title title"
+                            "form form"; */
+        /* justify-items: center; cartas */
+        /* align-items:center; /* cartas */
+      /*  } */
 
 
-    #gridHijoUnoC {
+    /* #gridHijoUnoC { */
             /* background-color: rgb(126, 238, 62);  */
-            grid-area: title;
+            /* grid-area: title;
             width: 100%;
             height: 100%;
         }
 
-    #gridHijoDosC {
+    #gridHijoDosC { */
             /* falta dar estilo de formulario*/
             /* background-color: rgb(237, 188, 243); */
-            grid-area: form;
+            /* grid-area: form;
             width: 80%;
             height: 90%;
         }
@@ -614,7 +613,7 @@
         textarea{
         height:100px;
         width:80%;
-        }
+        } */
 
     /* falta estilo formulario*/
 
@@ -666,15 +665,15 @@
 
 
             /* ABOUT US*/
-            div h3{
+            /* div h3{
                 padding: 30px 0px 20px 40px;
             }
 
             .parrafoAB{
                 line-height: 1.5;
                 padding: 0px 30px 2px 50px;
-            }   /*hay una mejor forma de hacerlo?*/
-
+            }   hay una mejor forma de hacerlo? */
+/* 
         #gridPadreAB{
             grid-template-columns: 100% ;
             grid-template-rows:400px 300px 300px 300px 300px 300px 300px 300px 300px;
@@ -708,18 +707,18 @@
         #imgIntro{
             width: 90vw;
             
-        }
+        } */
 
 
 
             /* OUR GAMES*/
 
-            #gridPadreOG{
+            /* #gridPadreOG{
                 display: grid;
                 grid-template-columns:100%;
-                grid-template-rows:100px 200px 400px 200px 400px 200px 400px 200px 400px 200px 400px 50px;
+                grid-template-rows:100px 200px 400px 200px 400px 200px 400px 200px 400px 200px 400px 50px; */
                 /* background-color: rgb(234, 170, 236); */
-                grid-template-areas:"title"
+                /* grid-template-areas:"title"
                                     "nameG1" 
                                     "game1"
                                     "nameG2"
@@ -729,26 +728,26 @@
                                     "nameG4"
                                     "game4" 
                                     "nameG5" 
-                                    "game5"
-                                    "playStore"; /* existe forma de no poner tantos hijos?*/
-                justify-items: center; /*cartas */
-                align-items:center; /*cartas */
-                }
+                                    "game5" */
+                                    /* "playStore"; existe forma de no poner tantos hijos? */
+                /* justify-items: center; /*cartas */
+                /* align-items:center; /*cartas */
+             /*   } */ 
 
-                #title{
+                /* #title{
                     grid-area: title;
                     justify-self: start;
                     margin-left: 5vw;
-                }
+                } */
 
             /* WORK WITH US*/
 
-            #gridPadreWwU{
+            /* #gridPadreWwU{
                 display: grid;
                 grid-template-columns:100%;
-                grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px;
+                grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px; */
                 /* background-color: rgb(234, 170, 236); */
-                grid-template-areas:"place1"
+                /* grid-template-areas:"place1"
                                     "jobs1" 
                                     "jobs2" 
                                     "jobs3"
@@ -804,12 +803,12 @@
                 color: rgb(134, 17, 243);
                 justify-self:center;
                 padding-left: 30px;
-            }
+            } */
 
 
             /* CONTACT US*/
 
-            #gridPadreC{
+            /* #gridPadreC{
                 display: grid;
                 grid-template-columns:100%;
                 grid-template-rows:100px 400px;
@@ -828,15 +827,15 @@
                 height: 50vh;
             }
         
-        }
+        } */
 
 
     /*TABLETS */
 
-        @media (max-width:900px) and (min-width:600px){
+        /* @media (max-width:900px) and (min-width:600px){ */
 
             /*ABOUT US*/
-            #gridPadreAB{
+            /* #gridPadreAB{
                 grid-template-columns: 50% 50%;
                 grid-template-rows:400px 300px 300px 300px 300px 300px 300px;
                 grid-template-areas:"about1 about1"
@@ -848,9 +847,9 @@
                                     "born3 born3";
                 }
     
-                #gridHijoUnoAB {
+                #gridHijoUnoAB { */
                     /* background-color: aquamarine; */
-                    grid-area: about1;
+                    /* grid-area: about1;
                     justify-self: center;
                     align-self: center;  
                 }
@@ -889,16 +888,16 @@
             #imgIntro{
                 width: 70vw;               
             }
-        
+         */
 
             /* WORK WITH US*/
 
-            #gridPadreWwU{
+            /* #gridPadreWwU{
                 display: grid;
                 grid-template-columns:50% 50%;
-                grid-template-rows:500px 300px 300px 300px 300px 200px;
+                grid-template-rows:500px 300px 300px 300px 300px 200px; */
                 /* background-color: rgb(234, 170, 236); */
-                grid-template-areas:"place1 place1"
+                /* grid-template-areas:"place1 place1"
                                     "jobs1 jobs2" 
                                     "jobs3 jobs3"
                                     "ben1 ben2" 
@@ -972,16 +971,16 @@
                 padding-left: 30px;
             }
             
-        }
+        } */
 
 
     /*DESKTOP*/
 
-        @media only screen and (min-width:962px){
+        /* @media only screen and (min-width:962px){ */
 
             /* ABOUT US*/
             
-            #gridPadreAB{
+            /* #gridPadreAB{
                 grid-template-rows:700px 500px 400px 500px 400px;
             }
 
@@ -994,11 +993,11 @@
                 font-size: 30px;
                 padding: 0px 100px 0px 100px;
             }
-
+ */
 
             /* CONTACT US*/
             
-            #form{
+            /* #form{
                 font-size: 20px;
             }
             
@@ -1007,7 +1006,7 @@
                 width: 90%;
                 height: 70%;
             }
-    }
+    } */
 
 
         
@@ -1016,7 +1015,7 @@
     /*animaciones con aos*/
     
     /*ABOUT US*/
-    #job1:hover{
+    /* #job1:hover{
         transform: scale(1.2,1.2);
         filter: grayscale(0);
     }
@@ -1044,18 +1043,18 @@
     #b3:hover{
         transform: scale(1.2,1.2);
         filter: grayscale(0);
-    }
+    } */
 
 
     /*OUR GAMES*/
-        #imgJuego:hover{
+        /* #imgJuego:hover{
             transform: scale(1.2,1.2);
-        }
+        } */
 
 
     /*WORK WITH US*/    
-        #button:hover{
+        /* #button:hover{
             filter:grayscale(1);
-        }
+        } */
 
 

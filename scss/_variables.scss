@@ -1,4 +1,4 @@
-:root{
+
 /* variables globales*/
  $colorLetras: rgb(80, 216, 240);
  $colorTittle: rgb(239, 79, 245);
@@ -7,5 +7,59 @@
  $fontSizeParrafo: 1.5vw;
  $fontFamily: 'Roboto', sans-serif;
  /* buscar más para optimizar*/
-}      
+
+
+
+ /* extends*/
+ .img{
+    justify-self: center;
+    align-self: center; 
+    transition: all 1s;;
+    filter: grayscale(1);
+    width:30vw;
+    height:40vh;
+}
+
+.parrafo{
+    line-height: 1.5;
+    padding: 0px 50px 0px 30px;
+    font-size: $fontSizeParrafo;
+}
+
+.subTittle{ 
+    color: rgb(196, 91, 241);
+    font-style:normal;
+    font-family:$fontFamily;
+    font-size: 50px;
+    text-align: left;
+    padding: 50px 0px 40px 40px;
+}         
+
+
+.tittleH3{
+    text-align: center;
+    color: $colorTittle;
+    padding: 50px 0px 20px 40px;
+    // font-size: 30px;
+}
+
+
+
+
+//mixins, variables locales
+@mixin estiloCartas ($colorBG, $widthCard, $heightCard,$alig, $justify, $margin){
+    background-color: $colorBG;
+    width: $widthCard;
+    height: $heightCard;
+    align-items: $alig;
+    justify-items: $justify;
+    margin-top: $margin;
+}
+
+
+
+
+
+
+
 

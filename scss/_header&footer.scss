@@ -1,15 +1,15 @@
 /*HEADER*/
-#navbarNav{
-    /* background-color: rgb(147, 230, 241); */
-    // color: rgb(22, 20, 20);
-    // transition: background-color .5s;
-}
 
+/* Menu de navegación*/
+.lista{
+    width: 200px;
+    height: 60px;
+}
 /* Menu de navegación de la página*/
 #menu:hover{
     /* quiero cambiar tamaño del recuadro*/
     background-color: rgb(147, 230, 241);
-    // color: rgb(22, 20, 20);
+    color: rgb(22, 20, 20);
     transition: background-color .5s;
 }
 
@@ -20,6 +20,19 @@
     /*en mobile, se ve muy chico */
 }
 
+.logoHome:hover{
+    transform: scale(1.2,1.2);
+    transition: all .5s;
+}
+
+
+// .navbar-toggler-icon{
+//     color: rgb(6, 189, 196);
+// }
+
+// .navbar-toggler{
+//     color: aquamarine;
+// }
 
 /*FOOTER*/
 footer {
@@ -31,10 +44,21 @@ footer {
     }
     //join our comunity
     h5{
-        color: $colorTittle; 
-        font-size:2vw;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        @extend .tittleH3;
     }
+
+.redesSociales{
+        color: rgb(80, 216, 240);
+        font-size: 20px;              
+    } 
+}
+
+
+.footer{
+    background-color:rgb(15, 15, 15);
+    height: 35vh;
+}
+
+.haciaArriba{
+    margin-left: 85vw;
 }

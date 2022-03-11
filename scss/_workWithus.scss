@@ -1,0 +1,283 @@
+/*// WORK WITH US//*/
+
+
+    /* nueva implementación de grilla*/
+    #gridPadreWwU{
+        display: grid;
+        grid-template-columns:33% 33% 34%;
+        grid-template-rows:700px 350px 600px 100px;
+        /* background-color: rgb(234, 170, 236); */
+        grid-template-areas:"place1 place1 place1"
+                            "jobs1 jobs2 jobs3"
+                            "ben1 ben2 ben3"
+                            "cv cv cv";
+        justify-items: center; /*cartas */
+        align-items:center; /*cartas */
+        }
+
+
+    #gridHijoUnoWwU {
+        /* background-color: rgb(47, 247, 180); */
+        grid-area: place1;
+        width: 100%;
+        height: 100%;
+    }
+
+    #gridHijoDosWwU {
+        background-color: rgb(212, 158, 240);
+        grid-area: jobs1;
+        width: 80%;
+        height: 80%;
+    }
+
+    #gridHijoTresWwU {
+        background-color: rgb(157, 132, 245);
+        grid-area: jobs2;
+        width:  80%;
+        height: 80%;
+    }
+
+    #gridHijoCuatroWwU{
+        grid-area: jobs3;
+        background-color: rgb(49, 145, 209);
+        width: 80%;
+        height: 80%;
+    }
+
+
+    #gridHijoCincoWwU{
+        grid-area: ben1;
+        background-color: rgb(241, 226, 87);
+        width: 100%;
+        height: 100%;
+    }
+
+    #gridHijoSeisWwU{
+        grid-area: ben2;
+        background-color: rgb(222, 126, 247);
+        width: 100%;
+        height: 100%;
+    }
+
+    #gridHijoSieteWwU{
+        grid-area: ben3;
+        background-color: rgb(140, 245, 119);
+        width: 100%;
+        height: 100%;
+    }
+
+    #gridCV{
+        grid-area: cv;
+        width: 100%;
+        height: 100%;
+        /* background-color: antiquewhite; */
+    }
+
+
+    #subTitleH4{
+        color: rgb(46, 43, 243);
+        font-size:25px;
+        text-align: center;
+        padding-top: 20px;
+        }
+
+
+    #subTitleH5{
+        color: rgb(145, 11, 247);
+        font-size:15px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+
+        li {
+            text-align: center;
+            color:aliceblue;
+        }
+
+
+        #beneficts{
+            margin:80px 80px 80px 80px;
+            padding: 0px 10px 0px 10px;
+            height: 500px;
+        }
+    
+        #button{
+            color: aliceblue;
+            height: 30px;
+            width: 100px;            
+            background-image: linear-gradient(to top, #4A00E0, #8E2DE2);
+            /* alinear los que están dentro de los jobs*/
+        }
+    /* falta estilo a los labels e inputs*/
+
+
+
+
+
+  @media only screen and (max-width:600px){ 
+    #gridPadreWwU{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px;
+        /* background-color: rgb(234, 170, 236); */
+        grid-template-areas:"place1"
+                            "jobs1" 
+                            "jobs2" 
+                            "jobs3"
+                            "ben1" 
+                            "ben2" 
+                            "ben3"
+                            "cv";        
+        }
+
+        #gridHijoDosWwU{
+            width: 90%;
+            height: 90%;
+            font-size: 10px;
+        }
+
+        #gridHijoTresWwU{
+            width: 90%;
+            height: 90%;
+            font-size: 10px;
+        }
+
+        #gridHijoCuatroWwU{
+            width: 90%;
+            height: 90%;
+            font-size: 10px;
+        }
+
+        #subTitleH4{
+            font-size:15px;
+            }
+    
+    
+        #subTitleH5{
+            font-size:10px;
+            }
+
+
+    #beneficts{
+        width: 80vw;
+        height: 70vh;
+        margin:30px 50px 30px 80px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    #gridCV{
+        grid-area: cv;
+        width: 90%;
+        height: 200px;
+    }
+
+    .label{
+        font-size: 10px;
+        color: rgb(134, 17, 243);
+        justify-self:center;
+        padding-left: 30px;
+    }
+
+
+  }
+
+
+
+
+
+
+  @media (max-width:900px) and (min-width:600px){
+
+
+  /* WORK WITH US*/
+
+  #gridPadreWwU{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:500px 300px 300px 300px 300px 200px;
+    /* background-color: rgb(234, 170, 236); */
+    grid-template-areas:"place1 place1"
+                        "jobs1 jobs2" 
+                        "jobs3 jobs3"
+                        "ben1 ben2" 
+                        "ben3 ben3"
+                        "cv cv";        
+    }
+
+    #gridHijoDosWwU{
+        width: 90%;
+        height: 80%;
+        font-size: 10px;
+    }
+
+    #gridHijoTresWwU{
+        width: 90%;
+        height: 80%;
+        font-size: 10px;
+    }
+
+    #gridHijoCuatroWwU{
+        width: 50%;
+        height: 80%;
+        font-size: 10px;
+    }
+
+    #gridHijoCincoWwU{
+        width: 95%;
+        height: 90%;
+        font-size: 15px;
+    }
+
+    #gridHijoSeisWwU{
+        width: 95%;
+        height: 90%;
+        font-size: 15px;
+    }
+
+    #gridHijoSieteWwU{
+        width: 50%;
+        height: 90%;
+        font-size: 15px;
+    }
+
+    #subTitleH4{
+        font-size:15px;
+        }
+
+
+    #subTitleH5{
+        font-size:15px;
+        }
+
+
+#beneficts{
+    width: 100%;
+    height: 100%;
+    margin:30px 20px 0px 30px;
+    padding: 0px 10px 0px 10px;
+}
+
+#gridCV{
+    grid-area: cv;
+    width: 90%;
+    height: 200px;
+}
+
+.label{
+    font-size: 15px;
+    color: rgb(134, 17, 243);
+    justify-self:center;
+    padding-left: 30px;
+}
+
+}
+
+
+
+
+
+ /*WORK WITH US*/    
+ #button:hover{
+    filter:grayscale(1);
+}
