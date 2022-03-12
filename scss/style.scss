@@ -6,6 +6,8 @@
     @import "index";
     @import "header&footer";
     @import "variables";
+    @import "animaciones";
+    @import "mediaQueries";
 
     @import "aboutUs";
     @import "ourGames";
@@ -28,17 +30,6 @@
 
         /* background-image: linear-gradient(to bottom, rgb(27, 5, 5), rgb(73, 196, 233));
         /* }  */
-
-/*quita subrayado de los enlaces*/
-.subrayado{
-    text-decoration: none;
-} 
-
-/*color para los enlaces y algunos iconos*/
-.color{
-    color :$colorLetras;
-    font-size: 20px;              
-} 
 
 
 

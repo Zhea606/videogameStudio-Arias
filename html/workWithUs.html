@@ -25,7 +25,7 @@
 <body>
     <header id="inicioPagina"> 
         <!-- navbar -->
-        <nav  class="navbar navbar-expand-lg ">
+        <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <!--Logo del estudio-->
                 <a class="navbar-brand" href="../index.html" >
@@ -58,13 +58,12 @@
     <main>
         <section id="gridPadreWwU">
             <div id="gridHijoUnoWwU">
-                <h3 class="claseH3">FIND YOUR PLACE IN THE WORLD</h3>
+                <h3 id="place">FIND YOUR PLACE IN THE WORLD</h3>
                 <img data-aos="zoom-out-down" id="imgIntro" src="../img/1366_2000.jpeg " alt="us" width="70%" height="50%" class="centrar">
                     <h4 id="subTitleH4">Are you ready?</h4>
                         <h5 id="subTitleH5">OPEN POSITIONS:</h5>
                     <!-- falta el contador de la cantidad de posiciones-->
             </div>
-            <!-- no me convencen el tamaño de las img-->
             <div id="gridHijoDosWwU"  style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -75,7 +74,7 @@
                                 <h5 class="card-title">PROGRAMMING</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                <button id="button">APPLY HERE</button>
+                                <button id="btnApply">APPLY HERE</button>
                             </div>                       
                     </div>
                 </div>
@@ -90,7 +89,7 @@
                                 <h5 class="card-title">DESIGN</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                <button id="button">APPLY HERE</button>
+                                <button id="btnApply">APPLY HERE</button>
                             </div>                       
                     </div>
                 </div>
@@ -105,7 +104,7 @@
                             <h5 class="card-title">MARKETING</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <button id="button">APPLY HERE</button>
+                            <button id="btnApply">APPLY HERE</button>
                         </div>  
                     </div>
                 </div>
@@ -132,7 +131,7 @@
                 <h5 id="subTitleH5">Can't find your career? No problem, leave your CV here or send it by email to rbgamestudio@jobs.com.ar</h5>
                 <label class="label" for="usuario" >Enter your name and rol</label> 
                 <input type="text" placeholder="'Maria Jubelian, programmer '" id = usuario>
-                <input id="button" type="button" value="Attach cv">
+                <input id="btnApply" type="button" value="Attach cv">
             </section>
         </section>
     </main>
@@ -143,27 +142,27 @@
                 <section>
                     <!-- Facebook -->
                     <a class=" btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i  class="social fab fa-facebook-f"></i>
+                        <i  class="redesSociales fab fa-facebook-f"></i>
                     </a>
                     <!-- Twitter -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="social fab fa-twitter"></i>
+                        <i class="redesSociales fab fa-twitter"></i>
                     </a>
                     <!-- Google -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="social fab fa-google"></i>
+                        <i class="redesSociales fab fa-google"></i>
                     </a>
                     <!-- Instagram -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class=" social fab fa-instagram"></i>
+                        <i class=" redesSociales fab fa-instagram"></i>
                     </a>
                     <!-- Linkedin -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="social fab fa-linkedin-in"></i>
+                        <i class="redesSociales fab fa-linkedin-in"></i>
                     </a>
                     <!-- Github -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="social fab fa-github"></i>
+                        <i class="redesSociales fab fa-github"></i>
                     </a>
                 </section>
             </div>
@@ -172,7 +171,7 @@
                 <h4>RandomBrains© 2022 All rights reserved.</h4>
             </div>
                 <a href="#inicioPagina" class="haciaArriba" >
-                <i class="bi bi-caret-up"></i>
+                <i class="redesSociales bi bi-caret-up"></i>
                 </a>
             <!-- script animaciones -->
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

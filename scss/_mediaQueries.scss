@@ -1,0 +1,440 @@
+   /**** Media Queries ****/
+@import "variables.scss";
+@import "aboutUs.scss";
+@import "ourGames";
+@import "workWithus";
+
+/***MOBILE***/
+@media only screen and (max-width:600px){
+    
+    /*INDEX*/
+#gridPadre {
+    grid-template-columns:100%;
+    grid-template-rows:400px 500px 400px;
+    grid-template-areas: "n1"
+                        "videos"
+                        "objetivo";                      
+    justify-items: center;
+    align-items:center;
+}
+    
+    /*Nombre estudio*/
+
+main {
+    //titulo en grande 1
+    h1{
+        font-size: 10vw;
+    }
+    
+    //titulo mediano 2
+    h2{
+        font-size: 5vw;
+    } 
+    
+    //objetivo y vision
+    h3{
+        font-size: 15px;
+    }
+}  
+
+#logo {
+    width:15%;
+    height:15%;
+}
+    
+.parrafoIn{
+    font-size: 10px; 
+}
+
+
+/*esto no funciona acá, pero si en el scss de ab, averiguar por que*/
+
+    /* ABOUT US*/
+main div h3{
+    padding: 30px 0px 20px 40px;
+}
+
+#about{
+    font-size: 20px;
+}
+
+.parrafoAB{
+    line-height: 1.5;
+    padding: 0px 30px 2px 50px;
+    font-size: 10px;
+}   
+
+#gridPadreAB{
+    grid-template-columns: 100%;
+    grid-template-rows:400px 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:"about1 "
+                        "we"
+                        "believe1"
+                        "believe2"
+                        "believe3"
+                        "weB"
+                        "born1"
+                        "born2"
+                        "born3";
+}
+
+#imgIntro{
+    width: 90vw;
+}
+
+    
+#gridHijoUnoAB {
+    /* background-color: aquamarine; */
+    grid-area: about1;
+    justify-self: center;
+    align-self: center;  
+}
+            
+#gridHijoDosAB {
+    background-color: rgb(125, 90, 248);
+    grid-area: we; 
+    width: 100%;
+    height: 100%;
+}
+            
+#gridHijoTresAB{
+    grid-area: webB; 
+    background-color: rgb(241, 215, 64);
+    width: 100%;
+    height: 100%;
+}
+    
+
+#job1{
+    grid-area: believe1;
+}
+
+#job2{
+// @extend .img;
+    grid-area: believe2;
+}
+
+#job3{
+    // @extend .img;
+    grid-area: believe3;
+}
+
+#b1{
+    // @extend .img;
+    grid-area: born1;
+}
+
+#b2{
+    // @extend .img;
+    grid-area: born2;
+}
+
+#b3{
+   // @extend .img;
+    grid-area: born3;
+}
+
+
+
+    /* OUR GAMES*/
+
+#gridPadreOG{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:100px 200px 400px 200px 400px 200px 400px 200px 400px 200px 400px 50px;
+    /* background-color: rgb(234, 170, 236); */
+    grid-template-areas:"title"
+                        "nameG1" 
+                        "game1"
+                        "nameG2"
+                        "game2"
+                        "nameG3"
+                        "game3"
+                        "nameG4"
+                        "game4" 
+                        "nameG5" 
+                        "game5"
+                        "playStore"; 
+    justify-items: center; /*cartas */
+    align-items:center; /*cartas */
+}
+
+#title{
+    grid-area: title;
+    justify-self: start;
+    margin-left: 5vw;
+}
+
+
+
+    /*WORK WITH US*/
+
+#gridPadreWwU{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px;
+    /* background-color: rgb(234, 170, 236); */
+    grid-template-areas:"place1"
+                        "jobs1" 
+                        "jobs2" 
+                        "jobs3"
+                        "ben1" 
+                        "ben2" 
+                        "ben3"
+                        "cv";        
+}
+
+#gridHijoDosWwU{
+    width: 90%;
+    height: 90%;
+    font-size: 10px;
+}
+
+#gridHijoTresWwU{
+    width: 90%;
+    height: 90%;
+    font-size: 10px;
+}
+
+#gridHijoCuatroWwU{
+    width: 90%;
+    height: 90%;
+    font-size: 10px;
+}
+
+#subTitleH4{
+    font-size:15px;
+}
+    
+    
+#subTitleH5{
+    font-size:10px;
+}
+
+
+#beneficts{
+    width: 80vw;
+    height: 70vh;
+    margin:30px 50px 30px 80px;
+    padding: 0px 10px 0px 10px;
+}
+
+#gridCV{
+    grid-area: cv;
+    width: 90%;
+    height: 200px;
+}
+
+.label{
+    font-size: 10px;
+    color: rgb(134, 17, 243);
+    justify-self:center;
+    padding-left: 30px;
+}
+
+
+}
+
+    /* CONTACT US*/
+#gridPadreC{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:100px 400px;
+    grid-template-areas:"title"
+                        "form";
+}
+
+
+#form{
+    width: 60vw;
+    height: 50vh;
+}
+
+#fieldset{
+    width: 10vw;
+    height: 50vh;
+}
+
+
+
+
+/***TABLETS***/
+
+@media (max-width:900px) and (min-width:600px){
+
+    /*ABOUT US*/
+#gridPadreAB{
+    grid-template-columns: 50% 50%;
+    grid-template-rows:400px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:"about1 about1"
+                        "we we"
+                        "believe1 believe2"
+                        "believe3 believe3"
+                        "webB webB"
+                        "born1 born2"
+                        "born3 born3";
+}
+    
+#gridHijoUnoAB {
+    /* background-color: aquamarine; */
+    grid-area: about1;
+    justify-self: center;
+    align-self: center;  
+}
+            
+#gridHijoDosAB {
+    background-color: rgb(125, 90, 248);
+    grid-area: we; 
+    width: 100%;
+    height: 100%;
+}
+            
+#gridHijoTresAB{
+    grid-area: webB; 
+    background-color: rgb(241, 215, 64);
+    width: 100%;
+    height: 100%;
+}
+    
+                
+// .tamaño{
+//     width:40vw;
+//     height:30vh;
+// }
+    
+// .claseH3{
+//     text-align: center;
+//     padding: 50px 0px 20px 40px;
+//     font-size: 30px;
+// }        
+    
+// #nombreJuego {
+//     font-size: 20px;
+//     text-align: left;
+// }
+    
+#imgIntro{
+    width: 70vw;               
+}
+
+
+    /* WORK WITH US*/
+#gridPadreWwU{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:500px 300px 300px 300px 300px 200px;
+    /* background-color: rgb(234, 170, 236); */
+    grid-template-areas:"place1 place1"
+                        "jobs1 jobs2" 
+                        "jobs3 jobs3"
+                        "ben1 ben2" 
+                        "ben3 ben3"
+                        "cv cv";        
+}
+    
+#gridHijoDosWwU{
+    width: 90%;
+    height: 80%;
+    font-size: 10px;
+}
+    
+#gridHijoTresWwU{
+    width: 90%;
+    height: 80%;
+    font-size: 10px;
+}
+    
+#gridHijoCuatroWwU{
+    width: 50%;
+    height: 80%;
+    font-size: 10px;
+}
+    
+#gridHijoCincoWwU{
+    width: 95%;
+    height: 90%;
+    font-size: 15px;
+}
+    
+#gridHijoSeisWwU{
+    width: 95%;
+    height: 90%;
+    font-size: 15px;
+}
+    
+#gridHijoSieteWwU{
+    width: 50%;
+    height: 90%;
+    font-size: 15px;
+}
+    
+#subTitleH4{
+    font-size:15px;
+}
+    
+    
+#subTitleH5{
+    font-size:15px;
+}
+    
+    
+#beneficts{
+    width: 100%;
+    height: 100%;
+    margin:30px 20px 0px 30px;
+    padding: 0px 10px 0px 10px;
+}
+ 
+#gridCV{
+    grid-area: cv;
+    width: 90%;
+    height: 200px;
+}
+    
+.label{
+    font-size: 15px;
+    color: rgb(134, 17, 243);
+    justify-self:center;
+    padding-left: 30px;
+}
+    
+
+/*CONTACT*/
+#form{
+    font-size: 20px;
+}
+
+
+#fieldset{
+    width: 90%;
+    height: 70%;
+}
+
+}   
+
+
+/***DESKTOP***/
+@media only screen and (min-width:962px){
+
+    /* ABOUT US*/
+            
+// #gridPadreAB{
+//     grid-template-rows:700px 500px 400px 500px 400px;
+// }
+
+// .claseH3{
+//      padding: 100px 0px 40px 40px;
+//  }    
+
+//  .parrafoAB{
+//  line-height: 1.5;
+//       font-size: 30px;
+//       padding: 0px 100px 0px 100px;
+//   }
+
+}
+
+
+
+
+

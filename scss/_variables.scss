@@ -1,17 +1,27 @@
 
 /* variables globales*/
- $colorLetras: rgb(80, 216, 240);
- $colorTittle: rgb(239, 79, 245);
- $widthCard: 80%;
- $heightCard: 80%;
- $fontSizeParrafo: 1.5vw;
- $fontFamily: 'Roboto', sans-serif;
- /* buscar más para optimizar*/
+$colorLetras: rgb(80, 216, 240);
+$colorTittle: rgb(239, 79, 245);
+$widthCard: 80%;
+$heightCard: 80%;
+$fontSizeParrafo: 1.5vw;
+$fontFamily: 'Roboto', sans-serif;
+/* buscar más para optimizar*/
+
+/*quita subrayado de los enlaces*/
+.subrayado{
+    text-decoration: none;
+} 
+
+/*color para los enlaces y algunos iconos*/
+.color{
+    color :$colorLetras;
+    font-size: 20px;              
+} 
 
 
-
- /* extends*/
- .img{
+/* extends*/
+.img{
     justify-self: center;
     align-self: center; 
     transition: all 1s;;
@@ -43,11 +53,16 @@
     // font-size: 30px;
 }
 
-
+.button{
+    color: aliceblue;
+    height: 30px;
+    width: 100px;            
+    background-image: linear-gradient(to top, #4A00E0, #8E2DE2);
+}
 
 
 //mixins, variables locales
-@mixin estiloCartas ($colorBG, $widthCard, $heightCard,$alig, $justify, $margin){
+@mixin estiloCartas ($colorBG, $widthCard, $heightCard, $alig, $justify, $margin){
     background-color: $colorBG;
     width: $widthCard;
     height: $heightCard;
@@ -57,9 +72,11 @@
 }
 
 
-
-
-
-
-
+@mixin imgJuego ($width, $height, $border, $transition, $objectFit) {
+    width: $width;
+    height: $height;
+    border-style: $border;   
+    transition: $transition;
+    object-fit: $objectFit; 
+}
 
