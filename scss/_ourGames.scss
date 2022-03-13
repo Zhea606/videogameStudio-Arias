@@ -32,7 +32,7 @@
 
 
 #gridHijoDosOG {
-    background-color: rgb(33, 31, 34);
+    // background-color: rgb(33, 31, 34);
     grid-area: game1;
     width:  $widthCard;
     height: $heightCard;
@@ -40,7 +40,7 @@
 
 
 #gridHijoTresOG {
-    background-color: rgb(83, 48, 211);
+    // background-color: rgb(83, 48, 211);
     grid-area: game2;
     width:  $widthCard;
     height: $heightCard;
@@ -123,4 +123,50 @@
 
 .imGames{
     @include imgJuego(100%, 100%, outset, all 1s, cover);
+}
+
+
+
+/*MOBILE*/
+@media only screen and (max-width:600px){
+
+#gridPadreOG{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:100px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 50px;
+    /* background-color: rgb(234, 170, 236); */
+    grid-template-areas:"title"
+                        "nameG1" 
+                        "game1"
+                        "nameG2"
+                        "game2"
+                        "nameG3"
+                        "game3"
+                        "nameG4"
+                        "game4" 
+                        "nameG5" 
+                        "game5"
+                        "playStore";
+justify-items: center; /*cartas */
+align-items:center; /*cartas */
+}
+
+#nombreJuego {
+    @include fontSize(15px);
+}
+
+#games{
+    @include fontSize(20px);
+}
+
+
+.card{
+    @include estiloCartas(rgba(176, 233, 243, 0.76), 80%, 80%, center, center,4vw);
+}
+
+
+.label{
+    font-size: 12px;
+}
+
 }

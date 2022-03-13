@@ -31,6 +31,23 @@ textarea{
     width:80%;
 }
 
+
+#contact{
+    @extend .subTittle;
+}
+
+
 #btnSend{ 
     @extend .button;
+}
+
+
+/*MOBILE*/
+
+@media only screen and (max-width:600px){
+
+    #contact{
+        @include fontSize(20px);
+    }
+    
 }

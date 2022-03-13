@@ -55,33 +55,113 @@
     align-self:center;
 }
 
+// NO EXTENER LAS IMAG
+.img{
+    width:30vw;
+    height:40vh;
+
+}
 
 #job1{
-    @extend .img;
     grid-area: believe1;
+    justify-self: center;
+    align-self: center; 
+    transition: all 1s;
+    filter: grayscale(1);
 }
 
 #job2{
-    @extend .img;
     grid-area: believe2;
+    justify-self: center;
+    align-self: center;
+    transition: all 1s;
+    filter: grayscale(1);
 }
 
 #job3{
-    @extend .img;
     grid-area: believe3;
+    justify-self: center;
+    align-self: center;
+    transition: all 1s;
+    filter: grayscale(1);
 }
 
 #b1{
-    @extend .img;
     grid-area: born1;
+    justify-self: center;
+    align-self: center; 
+    transition: all 1s;
+    filter: grayscale(1);
 }
 
 #b2{
-    @extend .img;
     grid-area: born2;
+    justify-self: center;
+    align-self: center;
+    transition: all 1s;
+    filter: grayscale(1);
 }
 
 #b3{
-    @extend .img;
     grid-area: born3;
+    justify-self: center;
+    align-self: center;
+    transition: all 1s;
+    filter: grayscale(1);
+}
+
+
+
+/* MOBILE*/
+
+@media only screen and (max-width:600px){
+
+#gridPadreAB{
+    grid-template-columns: 100%;
+    grid-template-rows:400px 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:"about1 "
+                        "we"
+                        "believe1"
+                        "believe2"
+                        "believe3"
+                        "weB"
+                        "born1"
+                        "born2"
+                        "born3";
+}
+
+#about{
+    @include fontSize(20px);
+}
+
+#imgIntro{
+    width: 90vw;
+}
+
+.img{
+    @include imgTamaño(70vw,40vh);
+}
+
+}
+
+
+ /*TABLETS */
+
+@media (max-width:900px) and (min-width:600px){
+#gridPadreAB{
+    grid-template-columns: 50% 50%;
+    grid-template-rows:400px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:"about1 about1"
+                        "we we"
+                        "believe1 believe2"
+                        "believe3 believe3"
+                        "webB webB"
+                        "born1 born2"
+                        "born3 born3";
+}
+
+.img{
+    @include imgTamaño(40vw,30vh);
+}
+
 }

@@ -106,9 +106,166 @@
 }
 
 
+/*MOBILE*/
+
+@media only screen and (max-width:600px){
+
+#gridPadreWwU{
+display: grid;
+grid-template-columns:100%;
+grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px;
+/* background-color: rgb(234, 170, 236); */
+grid-template-areas:"place1"
+                    "jobs1" 
+                    "jobs2" 
+                    "jobs3"
+                    "ben1" 
+                    "ben2" 
+                    "ben3"
+                    "cv";        
+}
+
+#gridHijoDosWwU{
+    width: 90%;
+    height: 85%;
+    font-size: 10px;
+}
+
+#gridHijoTresWwU{
+    width: 90%;
+    height: 85%;
+    font-size: 10px;
+}
+
+#gridHijoCuatroWwU{
+    width: 90%;
+    height: 85%;
+    font-size: 10px;
+}
+
+#place{
+    @include fontSize(20px);
+}
+
+#subTitleH4{
+    font-size:15px;
+}
 
 
+#subTitleH5{
+    font-size:10px;
+}
 
 
+#beneficts{
+    width: 80vw;
+    height: 50vh;
+    margin:30px 50px 30px 80px;
+    padding: 0px 10px 0px 10px;
+}
 
+#gridCV{
+    grid-area: cv;
+    width: 90%;
+    height: 200px;
+}
+
+.label{
+    font-size: 10px;
+    color: rgb(134, 17, 243);
+    justify-self:center;
+    padding-left: 30px;
+}
+
+}
+
+
+ /*TABLETS */
+
+@media (max-width:900px) and (min-width:600px){
+
+#gridPadreWwU{
+display: grid;
+grid-template-columns:50% 50%;
+grid-template-rows:500px 400px 400px 300px 300px 200px;
+/* background-color: rgb(234, 170, 236); */
+grid-template-areas:"place1 place1"
+                    "jobs1 jobs2" 
+                    "jobs3 jobs3"
+                    "ben1 ben2" 
+                    "ben3 ben3"
+                    "cv cv";        
+}
+
+#gridHijoDosWwU{
+    width: 90%;
+    height: 80%;
+    font-size: 10px;
+}
+
+#gridHijoTresWwU{
+    width: 90%;
+    height: 80%;
+    font-size: 10px;
+}
+
+#gridHijoCuatroWwU{
+    width: 50%;
+    height: 80%;
+    font-size: 10px;
+}
+
+#gridHijoCincoWwU{
+    width: 95%;
+    height: 90%;
+    font-size: 15px;
+}
+
+#gridHijoSeisWwU{
+    width: 95%;
+    height: 90%;
+    font-size: 15px;
+}
+
+#gridHijoSieteWwU{
+    width: 50%;
+    height: 90%;
+    font-size: 15px;
+}
+
+#place{
+    @include fontSize(30px);
+}
+
+.card{
+    @include imgTamaño(50%, 80%);
+}
+
+
+#subTitleH4{
+    font-size:15px;
+}
+
+#subTitleH5{
+    font-size:15px;
+}
+    
+#beneficts{
+    width: 100%;
+    height: 100%;
+    margin:30px 20px 0px 30px;
+    padding: 0px 10px 0px 10px;
+}
+
+#gridCV{
+    grid-area: cv;
+    width: 90%;
+    height: 200px;
+}
+
+.label{
+    font-size: 15px;
+}
+
+}
 
