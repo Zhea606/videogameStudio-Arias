@@ -3,16 +3,16 @@
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"); 
 
 /*imports de scss*/
-    @import "index";
-    @import "header&footer";
-    @import "variables";
-    @import "animaciones";
-    @import "mediaQueries";
+    @import "../scss/pages/index";
+    @import "../scss/helpers/header&footer";
+    @import "../scss/helpers/variables";
+    @import "../scss/helpers/animaciones";
+    @import "../scss/helpers/mediaQueries";
 
-    @import "aboutUs";
-    @import "ourGames";
-    @import "workWithus";
-    @import "contact";
+    @import "../scss/pages/aboutUs";
+    @import "../scss/pages/ourGames";
+    @import "../scss/pages/workWithus";
+    @import "../scss/pages/contact";
 
 /* Reseteo de CSS*/
   * {
@@ -20,16 +20,13 @@
         padding: 0;
     }
 
-/* falta imagen de fondo*/
-        
-        /* body{
+/* fondo de la página*/        
+body{
 
-        background-image: url(/img/assets/fondoPagina.jpg);
-        background-size: 100vw 100vh; 
-        background-attachment: fixed; */ 
-
-        /* }  */
-
+    background-image: url(/img/assets/fondoAlt.jpg);
+    background-size: 100vw 100vh; 
+    background-attachment: fixed; 
+    }  
 
 
 

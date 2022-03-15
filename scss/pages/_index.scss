@@ -1,5 +1,5 @@
 /*//INDEX//*/
-@import "variables";
+@import "../helpers/variables";
 
 /* nueva implementación de grilla main*/
 #gridPadre{
@@ -20,7 +20,7 @@
 }
 
 #gridHijoDos {
-    background-color: rgb(77, 34, 235);
+    // background-color: rgb(77, 34, 235);
     grid-area: videos;
     width: $widthCard;
     height: $heightCard;
