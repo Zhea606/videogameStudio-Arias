@@ -9,7 +9,7 @@
 
 #gridPadre {
     grid-template-columns:100%;
-    grid-template-rows:400px 500px 400px;
+    grid-template-rows:400px 300px 400px;
     grid-template-areas: "n1"
                         "videos"
                         "objetivo";                      
@@ -22,7 +22,7 @@
 main {
     //titulo en grande 1
     h1{
-        font-size: 15vw ;
+        font-size: 10vw ;
         }
     //titulo mediano 2
     h2{

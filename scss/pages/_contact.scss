@@ -22,7 +22,7 @@
 #gridHijoDosC {
     /* background-color: rgb(237, 188, 243); */
     grid-area: form;
-    width: $widthCard;
+    width: 60%;
     height: 90%;
 }
 
@@ -31,6 +31,9 @@ textarea{
     width:80%;
 }
 
+.form-control{
+    margin-top: 20px;
+}
 
 #contact{
     @extend .subTittle;
@@ -39,6 +42,8 @@ textarea{
 
 #btnSend{ 
     @extend .button;
+    margin-top: 20px;
+    /* alinear el btn al centro*/
 }
 
 

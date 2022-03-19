@@ -101,11 +101,14 @@
 .label{
     grid-area: playStore;
     font-size: 20px;
-    color: rgb(134, 17, 243);
+    color: rgb(223, 199, 247);
     justify-self:center;
     padding-left: 30px;
 }
 
+section label a {
+    color: rgb(193, 216, 236);
+}
 
 #nombreJuego {
     @extend .tittleH3;

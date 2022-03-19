@@ -22,7 +22,7 @@
   color: #aeeff8; }
 
 .subTittle, #about, #games, #place, #contact {
-  color: #cf6afa;
+  color: #ecdef1;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
@@ -140,7 +140,7 @@ footer .redesSociales {
   color: #aeeff8; }
 
 .subTittle, #about, #games, #place, #contact {
-  color: #cf6afa;
+  color: #ecdef1;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
@@ -215,7 +215,7 @@ footer .redesSociales {
   color: #aeeff8; }
 
 .subTittle, #about, #games, #place, #contact {
-  color: #cf6afa;
+  color: #ecdef1;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
@@ -239,13 +239,13 @@ footer .redesSociales {
 @media only screen and (max-width: 600px) {
   #gridPadre {
     grid-template-columns: 100%;
-    grid-template-rows: 400px 500px 400px;
+    grid-template-rows: 400px 300px 400px;
     grid-template-areas: "n1" "videos" "objetivo";
     justify-items: center;
     align-items: center; }
   /*Nombre estudio*/
   main h1 {
-    font-size: 15vw; }
+    font-size: 10vw; }
   main h2 {
     font-size: 10vw; }
   main h3 {
@@ -280,14 +280,14 @@ footer .redesSociales {
   height: 100%; }
 
 #gridHijoDosAB {
-  background-color: rgba(124, 90, 248, 0.746);
+  background-color: rgba(8, 8, 8, 0.897);
   grid-area: we;
   width: 100%;
   height: 100%; }
 
 #gridHijoTresAB {
   grid-area: weB;
-  background-color: rgba(96, 243, 108, 0.746);
+  background-color: rgba(8, 8, 8, 0.897);
   width: 100%;
   height: 100%; }
 
@@ -349,7 +349,7 @@ footer .redesSociales {
 @media only screen and (max-width: 600px) {
   #gridPadreAB {
     grid-template-columns: 100%;
-    grid-template-rows: 400px 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: 400px 200px 400px 400px 400px 200px 400px 400px 400px;
     grid-template-areas: "about1 " "we" "believe1" "believe2" "believe3" "weB" "born1" "born2" "born3"; }
   #about {
     font-size: 20px; }
@@ -363,7 +363,7 @@ footer .redesSociales {
 @media (max-width: 900px) and (min-width: 600px) {
   #gridPadreAB {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 400px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: 500px 300px 400px 300px 400px 400px 300px;
     grid-template-areas: "about1 about1" "we we" "believe1 believe2" "believe3 believe3" "webB webB" "born1 born2" "born3 born3"; }
   .img {
     width: 40vw;
@@ -448,9 +448,12 @@ footer .redesSociales {
 .label {
   grid-area: playStore;
   font-size: 20px;
-  color: #8611f3;
+  color: #dfc7f7;
   justify-self: center;
   padding-left: 30px; }
+
+section label a {
+  color: #c1d8ec; }
 
 #nombreJuego {
   font-size: 30px; }
@@ -501,7 +504,7 @@ footer .redesSociales {
 #gridPadreWwU {
   display: grid;
   grid-template-columns: 33% 33% 34%;
-  grid-template-rows: 700px 350px 600px 100px;
+  grid-template-rows: 700px 350px 600px 200px;
   /* background-color: rgb(234, 170, 236); */
   grid-template-areas: "place1 place1 place1" "jobs1 jobs2 jobs3" "ben1 ben2 ben3" "cv cv cv";
   justify-items: center;
@@ -516,38 +519,38 @@ footer .redesSociales {
   height: 100%; }
 
 #gridHijoDosWwU {
-  background-color: #d49ef0;
+  background-color: #76bbdb;
   grid-area: jobs1;
   width: 80%;
   height: 80%; }
 
 #gridHijoTresWwU {
-  background-color: #9d84f5;
+  background-color: #76bbdb;
   grid-area: jobs2;
   width: 80%;
   height: 80%; }
 
 #gridHijoCuatroWwU {
   grid-area: jobs3;
-  background-color: #3191d1;
+  background-color: #76bbdb;
   width: 80%;
   height: 80%; }
 
 #gridHijoCincoWwU {
   grid-area: ben1;
-  background-color: #f1e257;
+  background-color: #00060a;
   width: 100%;
   height: 100%; }
 
 #gridHijoSeisWwU {
   grid-area: ben2;
-  background-color: #de7ef7;
+  background-color: #00060a;
   width: 100%;
   height: 100%; }
 
 #gridHijoSieteWwU {
   grid-area: ben3;
-  background-color: #8cf577;
+  background-color: #00060a;
   width: 100%;
   height: 100%; }
 
@@ -558,13 +561,13 @@ footer .redesSociales {
   /* background-color: antiquewhite; */ }
 
 #subTitleH4 {
-  color: #2e2bf3;
+  color: #9e9df3;
   font-size: 25px;
   text-align: center;
   padding-top: 20px; }
 
 #subTitleH5 {
-  color: #910bf7;
+  color: #cfa0f3;
   font-size: 15px;
   text-align: center;
   padding-top: 20px;
@@ -573,7 +576,8 @@ footer .redesSociales {
 #beneficts {
   margin: 80px 80px 80px 80px;
   padding: 0px 10px 0px 10px;
-  height: 500px; }
+  height: 500px;
+  color: #f114f8; }
 
 /*MOBILE*/
 @media only screen and (max-width: 600px) {
@@ -608,20 +612,17 @@ footer .redesSociales {
     padding: 0px 10px 0px 10px; }
   #gridCV {
     grid-area: cv;
-    width: 90%;
+    width: 80%;
     height: 200px; }
   .label {
-    font-size: 10px;
-    color: #8611f3;
-    justify-self: center;
-    padding-left: 30px; } }
+    font-size: 10px; } }
 
 /*TABLETS */
 @media (max-width: 900px) and (min-width: 600px) {
   #gridPadreWwU {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 500px 400px 400px 300px 300px 200px;
+    grid-template-rows: 500px 300px 300px 300px 300px 200px;
     /* background-color: rgb(234, 170, 236); */
     grid-template-areas: "place1 place1" "jobs1 jobs2"  "jobs3 jobs3" "ben1 ben2"  "ben3 ben3" "cv cv"; }
   #gridHijoDosWwU {
@@ -690,12 +691,19 @@ footer .redesSociales {
 #gridHijoDosC {
   /* background-color: rgb(237, 188, 243); */
   grid-area: form;
-  width: 80%;
+  width: 60%;
   height: 90%; }
 
 textarea {
   height: 100px;
   width: 80%; }
+
+.form-control {
+  margin-top: 20px; }
+
+#btnSend {
+  margin-top: 20px;
+  /* alinear el btn al centro*/ }
 
 /*MOBILE*/
 @media only screen and (max-width: 600px) {

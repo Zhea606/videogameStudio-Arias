@@ -4,7 +4,7 @@
 #gridPadreWwU{
     display: grid;
     grid-template-columns:33% 33% 34%;
-    grid-template-rows:700px 350px 600px 100px;
+    grid-template-rows:700px 350px 600px 200px;
     /* background-color: rgb(234, 170, 236); */
     grid-template-areas:"place1 place1 place1"
                         "jobs1 jobs2 jobs3"
@@ -23,14 +23,14 @@
 }
 
 #gridHijoDosWwU {
-    background-color: rgb(212, 158, 240);
+    background-color: rgb(118, 187, 219);
     grid-area: jobs1;
     width: 80%;
     height: 80%;
 }
 
 #gridHijoTresWwU {
-    background-color: rgb(157, 132, 245);
+    background-color: rgb(118, 187, 219);
     grid-area: jobs2;
     width:  80%;
     height: 80%;
@@ -38,7 +38,7 @@
 
 #gridHijoCuatroWwU{
     grid-area: jobs3;
-    background-color: rgb(49, 145, 209);
+    background-color: rgb(118, 187, 219);
     width: 80%;
     height: 80%;
 }
@@ -46,21 +46,21 @@
 
 #gridHijoCincoWwU{
     grid-area: ben1;
-    background-color: rgb(241, 226, 87);
+    background-color: rgb(0, 6, 10);
     width: 100%;
     height: 100%;
 }
 
 #gridHijoSeisWwU{
     grid-area: ben2;
-    background-color: rgb(222, 126, 247);
+    background-color: rgb(0, 6, 10);
     width: 100%;
     height: 100%;
 }
 
 #gridHijoSieteWwU{
     grid-area: ben3;
-    background-color: rgb(140, 245, 119);
+    background-color: rgb(0, 6, 10);
     width: 100%;
     height: 100%;
 }
@@ -79,7 +79,7 @@
 
 
 #subTitleH4{
-    color: rgb(46, 43, 243);
+    color: rgb(158, 157, 243);
     font-size:25px;
     text-align: center;
     padding-top: 20px;
@@ -87,7 +87,7 @@
 
 
 #subTitleH5{
-    color: rgb(145, 11, 247);
+    color: rgb(207, 160, 243);
     font-size:15px;
     text-align: center;
     padding-top: 20px;
@@ -99,6 +99,7 @@
     margin:80px 80px 80px 80px;
     padding: 0px 10px 0px 10px;
     height: 500px;
+    color: rgb(241, 20, 248);
 }
     
 #btnApply{ 
@@ -166,15 +167,12 @@ grid-template-areas:"place1"
 
 #gridCV{
     grid-area: cv;
-    width: 90%;
+    width: 80%;
     height: 200px;
 }
 
 .label{
     font-size: 10px;
-    color: rgb(134, 17, 243);
-    justify-self:center;
-    padding-left: 30px;
 }
 
 }
@@ -187,7 +185,7 @@ grid-template-areas:"place1"
 #gridPadreWwU{
 display: grid;
 grid-template-columns:50% 50%;
-grid-template-rows:500px 400px 400px 300px 300px 200px;
+grid-template-rows:500px 300px 300px 300px 300px 200px;
 /* background-color: rgb(234, 170, 236); */
 grid-template-areas:"place1 place1"
                     "jobs1 jobs2" 
