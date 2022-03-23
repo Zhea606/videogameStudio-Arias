@@ -1,1 +1,1 @@
-# <RB Studios - videogames development { color: #FF0000; }>
+# < RB Studios - videogames development />
