@@ -1,36 +1,34 @@
 /*// WORK WITH US//*/
 
-/* nueva implementación de grilla*/
 #gridPadreWwU{
     display: grid;
     grid-template-columns:33% 33% 34%;
-    grid-template-rows:700px 350px 600px 200px;
+    grid-template-rows:700px 300px 600px 200px;
     /* background-color: rgb(234, 170, 236); */
     grid-template-areas:"place1 place1 place1"
                         "jobs1 jobs2 jobs3"
                         "ben1 ben2 ben3"
                         "cv cv cv";
-    justify-items: center; /*cartas */
-    align-items:center; /*cartas */
+    justify-items: center; 
+    align-items:center; 
 }
 
 
 #gridHijoUnoWwU {
-    /* background-color: rgb(47, 247, 180); */
     grid-area: place1;
     width: 100%;
     height: 100%;
 }
 
 #gridHijoDosWwU {
-    background-color: rgb(118, 187, 219);
+    background-color: rgba(8, 105, 196, 0.692);
     grid-area: jobs1;
     width: 80%;
     height: 80%;
 }
 
 #gridHijoTresWwU {
-    background-color: rgb(118, 187, 219);
+    background-color: rgba(8, 105, 196, 0.692);
     grid-area: jobs2;
     width:  80%;
     height: 80%;
@@ -38,7 +36,7 @@
 
 #gridHijoCuatroWwU{
     grid-area: jobs3;
-    background-color: rgb(118, 187, 219);
+    background-color: rgba(8, 105, 196, 0.692);
     width: 80%;
     height: 80%;
 }
@@ -69,7 +67,6 @@
     grid-area: cv;
     width: 100%;
     height: 100%;
-    /* background-color: antiquewhite; */
 }
 
 
@@ -88,7 +85,7 @@
 
 #subTitleH5{
     color: rgb(207, 160, 243);
-    font-size:15px;
+    font-size:20px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -98,12 +95,25 @@
 #beneficts{
     margin:80px 80px 80px 80px;
     padding: 0px 10px 0px 10px;
-    height: 500px;
+    height: 400px;
     color: rgb(241, 20, 248);
 }
     
 #btnApply{ 
     @extend .button;
+}
+
+.card-title{
+    color: rgb(201, 180, 222);
+    font-weight: bold; 
+}
+
+.parrafoWork{
+    line-height: 1.5;
+    padding: 0px 50px 0px 30px;
+    font-size:20px;
+    color: rgb(174, 239, 248);
+    
 }
 
 
@@ -115,7 +125,6 @@
 display: grid;
 grid-template-columns:100%;
 grid-template-rows:500px 400px 400px 400px 300px 300px 300px 200px;
-/* background-color: rgb(234, 170, 236); */
 grid-template-areas:"place1"
                     "jobs1" 
                     "jobs2" 
@@ -186,7 +195,6 @@ grid-template-areas:"place1"
 display: grid;
 grid-template-columns:50% 50%;
 grid-template-rows:500px 300px 300px 300px 300px 200px;
-/* background-color: rgb(234, 170, 236); */
 grid-template-areas:"place1 place1"
                     "jobs1 jobs2" 
                     "jobs3 jobs3"

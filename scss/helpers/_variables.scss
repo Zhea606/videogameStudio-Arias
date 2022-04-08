@@ -6,7 +6,6 @@ $widthCard: 80%;
 $heightCard: 80%;
 $fontSizeParrafo: 1.5vw;
 $fontFamily: 'Roboto', sans-serif;
-/* buscar más para optimizar*/
 
 /*quita subrayado de los enlaces*/
 .subrayado{
@@ -19,22 +18,12 @@ $fontFamily: 'Roboto', sans-serif;
     font-size: 20px;     
 } 
 
-
-/* extends*/
-// .img{
-//     justify-self: center;
-//     align-self: center; 
-//     transition: all 1s;
-//     filter: grayscale(1);
-//     width:30vw;
-//     height:40vh;
-// }
-
 .parrafo{
     line-height: 1.5;
     padding: 0px 50px 0px 30px;
-    font-size: $fontSizeParrafo;
+    font-size:30px;
     color: rgb(174, 239, 248);
+    font-style: italic;
 }
 
 .subTittle{ 
@@ -43,14 +32,14 @@ $fontFamily: 'Roboto', sans-serif;
     font-family:$fontFamily;
     font-size: 50px;
     text-align: left;
-    padding: 50px 0px 40px 40px;        
+    padding: 50px 0px 40px 40px;   
+    font-weight: bold;      
 }
 
 .tittleH3{
     text-align: center;
     color: $colorTittle;
     padding: 50px 0px 20px 40px;
-    // font-size: 30px;
 }
 
 .button{

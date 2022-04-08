@@ -4,7 +4,6 @@
 /*imports de scss*/
 /*//INDEX//*/
 /* variables globales*/
-/* buscar más para optimizar*/
 /*quita subrayado de los enlaces*/
 .subrayado {
   text-decoration: none; }
@@ -14,12 +13,12 @@
   color: #50d8f0;
   font-size: 20px; }
 
-/* extends*/
 .parrafo, .parrafoIn, .parrafoAB {
   line-height: 1.5;
   padding: 0px 50px 0px 30px;
-  font-size: 1.5vw;
-  color: #aeeff8; }
+  font-size: 30px;
+  color: #aeeff8;
+  font-style: italic; }
 
 .subTittle, #about, #games, #place, #contact {
   color: #ecdef1;
@@ -27,7 +26,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   text-align: left;
-  padding: 50px 0px 40px 40px; }
+  padding: 50px 0px 40px 40px;
+  font-weight: bold; }
 
 .tittleH3, main h3, footer h5, #nombreJuego {
   text-align: center;
@@ -41,7 +41,6 @@
   background-image: linear-gradient(to top, #4A00E0, #8E2DE2); }
 
 /*mixin media queries*/
-/* nueva implementación de grilla main*/
 #gridPadre {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -51,7 +50,6 @@
   align-items: center; }
 
 #gridHijoUno {
-  /* background-color: rgb(99, 243, 190); */
   grid-area: n1;
   width: 100%;
   height: 80%; }
@@ -64,8 +62,7 @@
 #gridHijoTres {
   grid-area: objetivo;
   width: 80%;
-  height: 80%;
-  /*falta más estilo y mas contenido*/ }
+  height: 80%; }
 
 /* Nombre del estudio*/
 main h1 {
@@ -73,14 +70,20 @@ main h1 {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 5vw;
-  padding-top: 200px; }
+  padding-top: 200px;
+  font-weight: bold; }
 
 main h2 {
-  color: #39c798;
+  color: #a9eedf;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 3vw;
-  text-align: right; }
+  text-align: right;
+  font-weight: bold; }
+
+.carousel-item > iframe {
+  min-width: 100%;
+  height: 30rem; }
 
 /*HEADER*/
 /* Menu de navegación*/
@@ -90,7 +93,6 @@ main h2 {
 
 /* Menu de navegación de la página*/
 #menu:hover {
-  /* quiero cambiar tamaño del recuadro*/
   background-color: #93e6f1;
   color: #161414;
   transition: background-color .5s; }
@@ -98,8 +100,7 @@ main h2 {
 /*logo del estudio/home*/
 #logo {
   width: 20%;
-  height: 20%;
-  /*en mobile, se ve muy chico */ }
+  height: 20%; }
 
 .logoHome:hover {
   transform: scale(1.2, 1.2);
@@ -122,7 +123,6 @@ footer .redesSociales {
   margin-left: 85vw; }
 
 /* variables globales*/
-/* buscar más para optimizar*/
 /*quita subrayado de los enlaces*/
 .subrayado {
   text-decoration: none; }
@@ -132,12 +132,12 @@ footer .redesSociales {
   color: #50d8f0;
   font-size: 20px; }
 
-/* extends*/
 .parrafo, .parrafoIn, .parrafoAB {
   line-height: 1.5;
   padding: 0px 50px 0px 30px;
-  font-size: 1.5vw;
-  color: #aeeff8; }
+  font-size: 30px;
+  color: #aeeff8;
+  font-style: italic; }
 
 .subTittle, #about, #games, #place, #contact {
   color: #ecdef1;
@@ -145,7 +145,8 @@ footer .redesSociales {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   text-align: left;
-  padding: 50px 0px 40px 40px; }
+  padding: 50px 0px 40px 40px;
+  font-weight: bold; }
 
 .tittleH3, main h3, footer h5, #nombreJuego {
   text-align: center;
@@ -197,7 +198,6 @@ footer .redesSociales {
 
 /**** Media Queries ****/
 /* variables globales*/
-/* buscar más para optimizar*/
 /*quita subrayado de los enlaces*/
 .subrayado {
   text-decoration: none; }
@@ -207,12 +207,12 @@ footer .redesSociales {
   color: #50d8f0;
   font-size: 20px; }
 
-/* extends*/
 .parrafo, .parrafoIn, .parrafoAB {
   line-height: 1.5;
   padding: 0px 50px 0px 30px;
-  font-size: 1.5vw;
-  color: #aeeff8; }
+  font-size: 30px;
+  color: #aeeff8;
+  font-style: italic; }
 
 .subTittle, #about, #games, #place, #contact {
   color: #ecdef1;
@@ -220,7 +220,8 @@ footer .redesSociales {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   text-align: left;
-  padding: 50px 0px 40px 40px; }
+  padding: 50px 0px 40px 40px;
+  font-weight: bold; }
 
 .tittleH3, main h3, footer h5, #nombreJuego {
   text-align: center;
@@ -235,7 +236,6 @@ footer .redesSociales {
 
 /*mixin media queries*/
 /****MOBILE****/
-/* INDEX*/
 @media only screen and (max-width: 600px) {
   #gridPadre {
     grid-template-columns: 100%;
@@ -245,24 +245,33 @@ footer .redesSociales {
     align-items: center; }
   /*Nombre estudio*/
   main h1 {
-    font-size: 10vw; }
+    font-size: 8vw; }
   main h2 {
-    font-size: 10vw; }
+    font-size: 6vw; }
   main h3 {
-    font-size: 15px; }
+    text-align: center;
+    color: #ef4ff5;
+    padding: 100px 40px 0px 0px;
+    font-size: 6vw; }
   #logo {
     width: 15%;
     height: 15%; }
-  #tituloObjetivo {
-    padding-bottom: 7px;
-    font-size: 20px; }
-  .parrafo, .parrafoIn, .parrafoAB {
-    font-size: 10px; }
+  .parrafoIn {
+    padding: 30px 0px 0px 30px;
+    font-size: 15px; }
   footer h5 {
     font-size: 5vw; }
-  /*ABOUT US*/ }
+  .carousel-item > iframe {
+    min-width: 100%;
+    height: 20rem; } }
 
 /*fin de media querie Mobile*/
+/*TABLETS */
+@media (max-width: 900px) and (min-width: 600px) {
+  .parrafoIn {
+    padding: 30px 20px 0px 30px;
+    font-size: 25px; } }
+
 /*//ABOUT US//*/
 /*nueva implementación de grilla*/
 #gridPadreAB {
@@ -274,7 +283,6 @@ footer .redesSociales {
   width: 100%; }
 
 #gridHijoUnoAB {
-  /* background-color: aquamarine; */
   grid-area: about1;
   width: 100%;
   height: 100%; }
@@ -290,6 +298,11 @@ footer .redesSociales {
   background-color: rgba(8, 8, 8, 0.897);
   width: 100%;
   height: 100%; }
+
+.parrafoAB {
+  font-size: 25px;
+  font-style: unset;
+  padding: 0px 80px 0px 80px; }
 
 .centrar {
   margin: auto;
@@ -349,38 +362,38 @@ footer .redesSociales {
 @media only screen and (max-width: 600px) {
   #gridPadreAB {
     grid-template-columns: 100%;
-    grid-template-rows: 400px 200px 400px 400px 400px 200px 400px 400px 400px;
+    grid-template-rows: 400px 500px 300px 300px 300px 300px 300px 300px 300px;
     grid-template-areas: "about1 " "we" "believe1" "believe2" "believe3" "weB" "born1" "born2" "born3"; }
   #about {
     font-size: 20px; }
   #imgIntro {
-    width: 90vw; }
+    width: 60vw; }
   .img {
-    width: 70vw;
-    height: 40vh; } }
+    width: 60vw;
+    height: 30vh; }
+  .parrafoAB {
+    font-size: 15px; } }
 
 /*TABLETS */
 @media (max-width: 900px) and (min-width: 600px) {
   #gridPadreAB {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 500px 300px 400px 300px 400px 400px 300px;
+    grid-template-rows: 500px 400px 400px 300px 400px 400px;
     grid-template-areas: "about1 about1" "we we" "believe1 believe2" "believe3 believe3" "webB webB" "born1 born2" "born3 born3"; }
+  .parrafoAB {
+    font-size: 20px; }
   .img {
     width: 40vw;
     height: 30vh; } }
 
 /*// OUR GAMES//*/
-/* nueva implementación de grilla*/
 #gridPadreOG {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 200px 500px 500px 500px 500px 500px 200px;
-  /* background-color: rgb(234, 170, 236); */
   grid-template-areas: "title title" "nameG1 game1" "game2 nameG2" "nameG3 game3" "game4 nameG4" "nameG5 game5" "playStore playStore";
   justify-items: center;
-  /*cartas */
-  align-items: center;
-  /*cartas */ }
+  align-items: center; }
 
 #title {
   grid-area: title;
@@ -388,7 +401,6 @@ footer .redesSociales {
   margin-left: 5vw; }
 
 #gridHijoUnoOG {
-  /* background-color: rgb(47, 247, 180); */
   grid-area: nameG1;
   width: 100%;
   height: 100%; }
@@ -405,43 +417,36 @@ footer .redesSociales {
 
 #gridHijoCuatroOG {
   grid-area: nameG2;
-  /* background-color: rgb(49, 145, 209); */
   width: 100%;
   height: 100%; }
 
 #gridHijoCincoOG {
   grid-area: nameG3;
-  /* background-color: rgb(241, 226, 87); */
   width: 100%;
   height: 100%; }
 
 #gridHijoSeisOG {
   grid-area: game3;
-  /* background-color: rgb(198, 87, 226); */
   width: 80%;
   height: 80%; }
 
 #gridHijoSieteOG {
   grid-area: game4;
-  /* background-color: rgb(236, 71, 85); */
   width: 80%;
   height: 80%; }
 
 #gridHijoOchoOG {
   grid-area: nameG4;
-  /* background-color: rgb(46, 80, 235); */
   width: 100%;
   height: 100%; }
 
 #gridHijoNueveOG {
   grid-area: nameG5;
-  /* background-color: rgb(81, 88, 80); */
   width: 100%;
   height: 100%; }
 
 #gridHijoDiezOG {
   grid-area: game5;
-  /* background-color: rgb(82, 241, 77); */
   width: 80%;
   height: 80%; }
 
@@ -459,7 +464,7 @@ section label a {
   font-size: 30px; }
 
 .card {
-  background-color: rgba(176, 233, 243, 0.76);
+  background-color: rgba(12, 12, 12, 0.76);
   width: 80%;
   height: 80%;
   align-items: center;
@@ -473,66 +478,65 @@ section label a {
   transition: all 1s;
   object-fit: cover; }
 
+.card-text {
+  color: #ded7ce;
+  font-size: 20px; }
+
 /*MOBILE*/
 @media only screen and (max-width: 600px) {
   #gridPadreOG {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 50px;
-    /* background-color: rgb(234, 170, 236); */
     grid-template-areas: "title" "nameG1"  "game1" "nameG2" "game2" "nameG3" "game3" "nameG4" "game4"  "nameG5"  "game5" "playStore";
     justify-items: center;
-    /*cartas */
-    align-items: center;
-    /*cartas */ }
+    align-items: center; }
   #nombreJuego {
-    font-size: 15px; }
+    font-size: 20px; }
   #games {
     font-size: 20px; }
   .card {
-    background-color: rgba(176, 233, 243, 0.76);
+    background-color: rgba(12, 12, 12, 0.76);
     width: 80%;
     height: 80%;
     align-items: center;
     justify-items: center;
     margin-top: 4vw; }
   .label {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .card-text {
+    font-size: 15px; } }
 
 /*// WORK WITH US//*/
-/* nueva implementación de grilla*/
 #gridPadreWwU {
   display: grid;
   grid-template-columns: 33% 33% 34%;
-  grid-template-rows: 700px 350px 600px 200px;
+  grid-template-rows: 700px 300px 600px 200px;
   /* background-color: rgb(234, 170, 236); */
   grid-template-areas: "place1 place1 place1" "jobs1 jobs2 jobs3" "ben1 ben2 ben3" "cv cv cv";
   justify-items: center;
-  /*cartas */
-  align-items: center;
-  /*cartas */ }
+  align-items: center; }
 
 #gridHijoUnoWwU {
-  /* background-color: rgb(47, 247, 180); */
   grid-area: place1;
   width: 100%;
   height: 100%; }
 
 #gridHijoDosWwU {
-  background-color: #76bbdb;
+  background-color: rgba(8, 105, 196, 0.692);
   grid-area: jobs1;
   width: 80%;
   height: 80%; }
 
 #gridHijoTresWwU {
-  background-color: #76bbdb;
+  background-color: rgba(8, 105, 196, 0.692);
   grid-area: jobs2;
   width: 80%;
   height: 80%; }
 
 #gridHijoCuatroWwU {
   grid-area: jobs3;
-  background-color: #76bbdb;
+  background-color: rgba(8, 105, 196, 0.692);
   width: 80%;
   height: 80%; }
 
@@ -557,8 +561,7 @@ section label a {
 #gridCV {
   grid-area: cv;
   width: 100%;
-  height: 100%;
-  /* background-color: antiquewhite; */ }
+  height: 100%; }
 
 #subTitleH4 {
   color: #9e9df3;
@@ -568,7 +571,7 @@ section label a {
 
 #subTitleH5 {
   color: #cfa0f3;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -576,8 +579,18 @@ section label a {
 #beneficts {
   margin: 80px 80px 80px 80px;
   padding: 0px 10px 0px 10px;
-  height: 500px;
+  height: 400px;
   color: #f114f8; }
+
+.card-title {
+  color: #c9b4de;
+  font-weight: bold; }
+
+.parrafoWork {
+  line-height: 1.5;
+  padding: 0px 50px 0px 30px;
+  font-size: 20px;
+  color: #aeeff8; }
 
 /*MOBILE*/
 @media only screen and (max-width: 600px) {
@@ -585,7 +598,6 @@ section label a {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 500px 400px 400px 400px 300px 300px 300px 200px;
-    /* background-color: rgb(234, 170, 236); */
     grid-template-areas: "place1" "jobs1"  "jobs2"  "jobs3" "ben1"  "ben2"  "ben3" "cv"; }
   #gridHijoDosWwU {
     width: 90%;
@@ -623,7 +635,6 @@ section label a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 500px 300px 300px 300px 300px 200px;
-    /* background-color: rgb(234, 170, 236); */
     grid-template-areas: "place1 place1" "jobs1 jobs2"  "jobs3 jobs3" "ben1 ben2"  "ben3 ben3" "cv cv"; }
   #gridHijoDosWwU {
     width: 90%;
@@ -675,21 +686,16 @@ section label a {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 200px 500px;
-  /* background-color: rgb(255, 255, 255); */
   grid-template-areas: "title title" "form form";
   justify-items: center;
-  /*cartas */
-  align-items: center;
-  /* cartas */ }
+  align-items: center; }
 
 #gridHijoUnoC {
-  /* background-color: rgb(126, 238, 62);  */
   grid-area: title;
   width: 100%;
   height: 100%; }
 
 #gridHijoDosC {
-  /* background-color: rgb(237, 188, 243); */
   grid-area: form;
   width: 60%;
   height: 90%; }
@@ -702,13 +708,12 @@ textarea {
   margin-top: 20px; }
 
 #btnSend {
-  margin-top: 20px;
-  /* alinear el btn al centro*/ }
+  margin-top: 20px; }
 
 /*MOBILE*/
 @media only screen and (max-width: 600px) {
   #contact {
-    font-size: 20px; } }
+    font-size: 25px; } }
 
 /* Reseteo de CSS*/
 * {

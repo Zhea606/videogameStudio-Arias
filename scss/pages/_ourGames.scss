@@ -1,11 +1,9 @@
 /*// OUR GAMES//*/
 
-/* nueva implementación de grilla*/
 #gridPadreOG{
     display: grid;
     grid-template-columns:50% 50%;
     grid-template-rows:200px 500px 500px 500px 500px 500px 200px;
-    /* background-color: rgb(234, 170, 236); */
     grid-template-areas:"title title"
                         "nameG1 game1"
                         "game2 nameG2"
@@ -13,8 +11,8 @@
                         "game4 nameG4"
                         "nameG5 game5"
                         "playStore playStore"; 
-    justify-items: center; /*cartas */
-    align-items:center; /*cartas */
+    justify-items: center; 
+    align-items:center; 
 }
 
 #title{
@@ -24,7 +22,6 @@
 }
 
 #gridHijoUnoOG {
-    /* background-color: rgb(47, 247, 180); */
     grid-area: nameG1;
     width: 100%;
     height: 100%;
@@ -32,7 +29,6 @@
 
 
 #gridHijoDosOG {
-    // background-color: rgb(33, 31, 34);
     grid-area: game1;
     width:  $widthCard;
     height: $heightCard;
@@ -40,7 +36,6 @@
 
 
 #gridHijoTresOG {
-    // background-color: rgb(83, 48, 211);
     grid-area: game2;
     width:  $widthCard;
     height: $heightCard;
@@ -49,7 +44,6 @@
 
 #gridHijoCuatroOG{
     grid-area: nameG2;
-    /* background-color: rgb(49, 145, 209); */
     width:  100%;
     height:  100%;
 }
@@ -57,42 +51,36 @@
 
 #gridHijoCincoOG{
     grid-area: nameG3;
-    /* background-color: rgb(241, 226, 87); */
     width:  100%;
     height: 100%;
 }
 
 #gridHijoSeisOG{
     grid-area: game3;
-    /* background-color: rgb(198, 87, 226); */
     width:  $widthCard;
     height: $heightCard;
 }
 
 #gridHijoSieteOG{
     grid-area: game4;
-    /* background-color: rgb(236, 71, 85); */
     width:  $widthCard;
     height: $heightCard;
 }
 
 #gridHijoOchoOG{
     grid-area: nameG4;
-    /* background-color: rgb(46, 80, 235); */
     width:  100%;
     height: 100%;
 }
 
 #gridHijoNueveOG{
     grid-area: nameG5;
-    /* background-color: rgb(81, 88, 80); */
     width: 100%;
     height: 100%;
 }
 
 #gridHijoDiezOG{
     grid-area: game5;
-    /* background-color: rgb(82, 241, 77); */
     width:  $widthCard;
     height: $heightCard;
 }
@@ -120,7 +108,7 @@ section label a {
 }
 
 .card{
-    @include estiloCartas(rgba(176, 233, 243, 0.76), 80%, 80%, center, center,4vw);
+    @include estiloCartas(rgba(12, 12, 12, 0.76), 80%, 80%, center, center,4vw);
 }
 
 
@@ -128,7 +116,10 @@ section label a {
     @include imgJuego(100%, 100%, outset, all 1s, cover);
 }
 
-
+.card-text{
+    color: rgb(222, 215, 206);
+    font-size: 20px;
+}
 
 /*MOBILE*/
 @media only screen and (max-width:600px){
@@ -137,7 +128,6 @@ section label a {
     display: grid;
     grid-template-columns:100%;
     grid-template-rows:100px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 50px;
-    /* background-color: rgb(234, 170, 236); */
     grid-template-areas:"title"
                         "nameG1" 
                         "game1"
@@ -150,12 +140,12 @@ section label a {
                         "nameG5" 
                         "game5"
                         "playStore";
-justify-items: center; /*cartas */
-align-items:center; /*cartas */
+justify-items: center; 
+align-items:center; 
 }
 
 #nombreJuego {
-    @include fontSize(15px);
+    @include fontSize(20px);
 }
 
 #games{
@@ -164,12 +154,16 @@ align-items:center; /*cartas */
 
 
 .card{
-    @include estiloCartas(rgba(176, 233, 243, 0.76), 80%, 80%, center, center,4vw);
+    @include estiloCartas(rgba(12, 12, 12, 0.76), 80%, 80%, center, center,4vw);
 }
 
 
 .label{
     font-size: 12px;
+}
+
+.card-text{
+    font-size: 15px;
 }
 
 }
